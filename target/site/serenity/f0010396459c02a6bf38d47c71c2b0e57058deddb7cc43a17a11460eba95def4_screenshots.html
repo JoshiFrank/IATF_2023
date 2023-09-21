@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">IATF 2023</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="049f53b6e3c657bbacce5dd395266975891e2785af3238431fdaa6c906d1f3b2.html">To Validate The Explore Functionality</a></span>
+                > <span class="truncate-60"><a
+                    href="f0010396459c02a6bf38d47c71c2b0e57058deddb7cc43a17a11460eba95def4.html">To validate the explore page </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 15-09-2023 17:17</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">To Validate The Explore Functionality</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6fe0671aeea9e76b6998ee682216d11c7748a4152740df0586f3c256ecb3f5da.html">Chrome
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.html">Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="59736924e81ea98f655ac8eba7cd96079d8d80131e0c4360daf32a724d0b38a0.html">Chrome, Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="0e26a85110dd695768c671c6c1d97d6b0fe49ed13021c07007896327ed34761c.html">New
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">To validate the explore page
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="bfb341cde97cb6370cb5b04cabcf37aba66449fb93d50f7ce480e99403927aca.png" title=" Given To open the IATF application" width="1920"/>
+                <img src="fdba7a812993f61107b77c61ec2bcd58dda2a9a1f3b58e2fcd334dec3fabacf6.png" title=" When To click explore button" width="1920"/>
+                <img src="fdba7a812993f61107b77c61ec2bcd58dda2a9a1f3b58e2fcd334dec3fabacf6.png" title=" To click explore button" width="1920"/>
+                <img src="fdba7a812993f61107b77c61ec2bcd58dda2a9a1f3b58e2fcd334dec3fabacf6.png" title=" When To click explore button (completed)" width="1920"/>
+                <img src="4640d8f30f04e88924795227bdff5b44ae7f5f1e704fdba20f081cc01abcda52.png" title=" And To click explore link in popup" width="1920"/>
+                <img src="4640d8f30f04e88924795227bdff5b44ae7f5f1e704fdba20f081cc01abcda52.png" title=" To click explore link in popup" width="1920"/>
+                <img src="a8b3a8937d625fe07d7c677daaa493a7159386008d4e71afa65d7055eab32683.png" title=" To click explore link in popup (completed)" width="1920"/>
+                <img src="a8b3a8937d625fe07d7c677daaa493a7159386008d4e71afa65d7055eab32683.png" title=" And To click explore link in popup (completed)" width="1920"/>
+                <img src="51fad6b6d88a77f8bce9ed4331d87e6a25d13c9e710d519abc5f2cb98880fd51.png" title=" Then To validate the explore Title" width="1920"/>
+                <img src="51fad6b6d88a77f8bce9ed4331d87e6a25d13c9e710d519abc5f2cb98880fd51.png" title=" To validate the explore title" width="1920"/>
+                <img src="395d9a79c03cc405a49b0fff458e6daf852d2116b84c13e646ca0bbe29e10917.png" title=" To validate the explore title (completed)" width="1920"/>
+                <img src="395d9a79c03cc405a49b0fff458e6daf852d2116b84c13e646ca0bbe29e10917.png" title=" Then To validate the explore Title (completed)" width="1920"/>
+                <img src="34095a0ae4ebc01698c713cc8236af51738988346f72270dc8d14bb501f302a8.png" title=" When To click the registor to visit button in explore page" width="1920"/>
+                <img src="34095a0ae4ebc01698c713cc8236af51738988346f72270dc8d14bb501f302a8.png" title=" To click the registor to visit button in explore page" width="1920"/>
+                <img src="aba0c5c449aa54c57c75ec622fccf9c6d9afadf093c0d6fbd7e1602035070e6d.png" title=" When To click the registor to visit button in explore page" width="1920"/>
+                <img src="aba0c5c449aa54c57c75ec622fccf9c6d9afadf093c0d6fbd7e1602035070e6d.png" title=" To click the registor to visit button in explore page (completed)" width="1920"/>
+                <img src="3a72dadfef9ba03319031da3c0a84102d9f21fbc23be3d745d8bf6c1d24ff334.png" title=" Then To validate the navigate to registor to visit page from explore page" width="1920"/>
+                <img src="3a72dadfef9ba03319031da3c0a84102d9f21fbc23be3d745d8bf6c1d24ff334.png" title=" To validate the navigate to registor to visit page from explore page" width="1920"/>
+                <img src="6effd2cae08377579158165faae11b9857cd9afe6eae38cb7a70566cdd752f09.png" title=" When To navigate back" width="1920"/>
+                <img src="6effd2cae08377579158165faae11b9857cd9afe6eae38cb7a70566cdd752f09.png" title=" To navigate back" width="1920"/>
+                <img src="23691e692b14990597b0d72cd18b25e5b6f71d24d596f9f105c3f3673e28a7fd.png" title=" To navigate back (completed)" width="1920"/>
+                <img src="23691e692b14990597b0d72cd18b25e5b6f71d24d596f9f105c3f3673e28a7fd.png" title=" When To navigate back (completed)" width="1920"/>
+                <img src="23691e692b14990597b0d72cd18b25e5b6f71d24d596f9f105c3f3673e28a7fd.png" title=" Then To validate clear your calender in explore page" width="1920"/>
+                <img src="23691e692b14990597b0d72cd18b25e5b6f71d24d596f9f105c3f3673e28a7fd.png" title=" To validate clear your calender in explore page" width="1920"/>
+                <img src="955e52af15c24dfe1f8a0c2a6cb2f35af579d9e8e533a157d9eff0165d41406c.png" title=" When To click discover how exhibition work at IATF2023 link under the african trade market in explore page" width="1920"/>
+                <img src="955e52af15c24dfe1f8a0c2a6cb2f35af579d9e8e533a157d9eff0165d41406c.png" title=" To click discover how exhibition work at iatf2023 link under the african trade market in explore page" width="1920"/>
+                <img src="955e52af15c24dfe1f8a0c2a6cb2f35af579d9e8e533a157d9eff0165d41406c.png" title=" When To click discover how exhibition work at IATF2023 link under the african trade market in explore page (completed)" width="1920"/>
+                <img src="e73346a6ae8f5d7604f47360d1770f3b75be2638c0b93cd1e7e1e9812e873dfd.png" title=" Then To validate navigate to connecting african markets page from explore page" width="1920"/>
+                <img src="e73346a6ae8f5d7604f47360d1770f3b75be2638c0b93cd1e7e1e9812e873dfd.png" title=" To validate navigate to connecting african markets page from explore page" width="1920"/>
+                <img src="e73346a6ae8f5d7604f47360d1770f3b75be2638c0b93cd1e7e1e9812e873dfd.png" title=" Then To validate navigate to connecting african markets page from explore page (completed)" width="1920"/>
+                <img src="171b883a11b67ca64deeff47f6181eaa75dadb8c3d12d2cccbf4b7f2ac90385d.png" title=" When To navigate back" width="1920"/>
+                <img src="171b883a11b67ca64deeff47f6181eaa75dadb8c3d12d2cccbf4b7f2ac90385d.png" title=" To navigate back" width="1920"/>
+                <img src="171b883a11b67ca64deeff47f6181eaa75dadb8c3d12d2cccbf4b7f2ac90385d.png" title=" When To navigate back (completed)" width="1920"/>
+                <img src="34095a0ae4ebc01698c713cc8236af51738988346f72270dc8d14bb501f302a8.png" title=" When To click get inspired by IATF2023 conference link under inspiring inspect the in explore page" width="1920"/>
+                <img src="34095a0ae4ebc01698c713cc8236af51738988346f72270dc8d14bb501f302a8.png" title=" To click get inspired by iatf2023 conference link under inspiring inspect the in explore page" width="1920"/>
+                <img src="dcdd9452518c480252fd9325e9d1b941c38330ae4dd0fe357de067975f032238.png" title=" To click get inspired by iatf2023 conference link under inspiring inspect the in explore page (completed)" width="1920"/>
+                <img src="dcdd9452518c480252fd9325e9d1b941c38330ae4dd0fe357de067975f032238.png" title=" When To click get inspired by IATF2023 conference link under inspiring inspect the in explore page (completed)" width="1920"/>
+                <img src="dcdd9452518c480252fd9325e9d1b941c38330ae4dd0fe357de067975f032238.png" title=" Then To validate navigate to trade and investment page from explore page" width="1920"/>
+                <img src="dcdd9452518c480252fd9325e9d1b941c38330ae4dd0fe357de067975f032238.png" title=" To validate navigate to trade and investment page from explore page" width="1920"/>
+                <img src="171b883a11b67ca64deeff47f6181eaa75dadb8c3d12d2cccbf4b7f2ac90385d.png" title=" When To navigate back" width="1920"/>
+                <img src="171b883a11b67ca64deeff47f6181eaa75dadb8c3d12d2cccbf4b7f2ac90385d.png" title=" To navigate back" width="1920"/>
+                <img src="34095a0ae4ebc01698c713cc8236af51738988346f72270dc8d14bb501f302a8.png" title=" When To click see yourself link under the inspiring creators in explore page" width="1920"/>
+                <img src="34095a0ae4ebc01698c713cc8236af51738988346f72270dc8d14bb501f302a8.png" title=" To click see yourself link under the inspiring creators in explore page" width="1920"/>
+                <img src="cce59d0abbd27a548aa51856bcc4e04dce728261520514fd282e34be8f608bfe.png" title=" To click see yourself link under the inspiring creators in explore page (completed)" width="1920"/>
+                <img src="cce59d0abbd27a548aa51856bcc4e04dce728261520514fd282e34be8f608bfe.png" title=" When To click see yourself link under the inspiring creators in explore page (completed)" width="1920"/>
+                <img src="4d9cb0062ee91ad7d358e18901738187521755bb09cb8b8f45a60719230802ea.png" title=" Then To validate navigate to creative african nexus page from explore page" width="1920"/>
+                <img src="4d9cb0062ee91ad7d358e18901738187521755bb09cb8b8f45a60719230802ea.png" title=" To validate navigate to creative african nexus page from explore page" width="1920"/>
+                <img src="4d9cb0062ee91ad7d358e18901738187521755bb09cb8b8f45a60719230802ea.png" title=" Then To validate navigate to creative african nexus page from explore page (completed)" width="1920"/>
+                <img src="4d9cb0062ee91ad7d358e18901738187521755bb09cb8b8f45a60719230802ea.png" title=" When To navigate back" width="1920"/>
+                <img src="4d9cb0062ee91ad7d358e18901738187521755bb09cb8b8f45a60719230802ea.png" title=" To navigate back" width="1920"/>
+                <img src="b2d87d6e5a3135b8ee4f738afe14b8761549ed55fec1e0d7295412411c8eb7c7.png" title=" When To click discover countries will be featured link under the spotlights in explore page" width="1920"/>
+                <img src="b2d87d6e5a3135b8ee4f738afe14b8761549ed55fec1e0d7295412411c8eb7c7.png" title=" To click discover countries will be featured link under the spotlights in explore page" width="1920"/>
+                <img src="b2d87d6e5a3135b8ee4f738afe14b8761549ed55fec1e0d7295412411c8eb7c7.png" title=" When To click discover countries will be featured link under the spotlights in explore page (completed)" width="1920"/>
+                <img src="b2d87d6e5a3135b8ee4f738afe14b8761549ed55fec1e0d7295412411c8eb7c7.png" title=" Then To validate navigate to country day page from explore page" width="1920"/>
+                <img src="b2d87d6e5a3135b8ee4f738afe14b8761549ed55fec1e0d7295412411c8eb7c7.png" title=" To validate navigate to country day page from explore page" width="1920"/>
+                <img src="e03bf66f1e39eca64ee969a1502e196d02109668ca2b55aac3fc0e356f613a71.png" title=" When To navigate back" width="1920"/>
+                <img src="e03bf66f1e39eca64ee969a1502e196d02109668ca2b55aac3fc0e356f613a71.png" title=" To navigate back" width="1920"/>
+                <img src="fd14e71da85b8ff38ba4e0d02d9b355ae63b7b0d6a5518bf14dbed82bf34ecf8.png" title=" When To click how will you make deals link under the make deals face to face in explore page" width="1920"/>
+                <img src="fd14e71da85b8ff38ba4e0d02d9b355ae63b7b0d6a5518bf14dbed82bf34ecf8.png" title=" To click how will you make deals link under the make deals face to face in explore page" width="1920"/>
+                <img src="fd14e71da85b8ff38ba4e0d02d9b355ae63b7b0d6a5518bf14dbed82bf34ecf8.png" title=" When To click how will you make deals link under the make deals face to face in explore page (completed)" width="1920"/>
+                <img src="28f14ae6105e275510ff9815f79e1a16a07d2a7407c140044409362c44e8ad34.png" title=" Then To validate navigate to trade and investment page from explore page two" width="1920"/>
+                <img src="c6f351edc8fed4ae1eefb6f4cb297e53ac8ba49cb658eecececcf113b0bdf111.png" title=" When To click the registor to exhibit button bottom of explore page" width="1920"/>
+                <img src="c6f351edc8fed4ae1eefb6f4cb297e53ac8ba49cb658eecececcf113b0bdf111.png" title=" To click the registor to exhibit button bottom of explore page" width="1920"/>
+                <img src="c6f351edc8fed4ae1eefb6f4cb297e53ac8ba49cb658eecececcf113b0bdf111.png" title=" When To click the registor to exhibit button bottom of explore page (completed)" width="1920"/>
+                <img src="15f2cd61e9fbdd713f18739232fbd79877b376c21c3ca36a0ff5ad962aee27d9.png" title=" Then To validate the book your exhibitor page from explore page" width="1920"/>
+                <img src="15f2cd61e9fbdd713f18739232fbd79877b376c21c3ca36a0ff5ad962aee27d9.png" title=" To validate the book your exhibitor page from explore page" width="1920"/>
+                <img src="15f2cd61e9fbdd713f18739232fbd79877b376c21c3ca36a0ff5ad962aee27d9.png" title=" Then To validate the book your exhibitor page from explore page (completed)" width="1920"/>
+                <img src="b7f16ae22a944eabad692541dd06a918690b5c1b5f4e09a724928b203266cf9d.png" title=" When To navigate back" width="1920"/>
+                <img src="b7f16ae22a944eabad692541dd06a918690b5c1b5f4e09a724928b203266cf9d.png" title=" To navigate back" width="1920"/>
+                <img src="b7f16ae22a944eabad692541dd06a918690b5c1b5f4e09a724928b203266cf9d.png" title=" When To navigate back (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.6.21</span>
+</div>
+</body>
+</html>

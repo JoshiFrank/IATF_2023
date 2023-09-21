@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.IATF.runner.IATF_Runner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 127.248 s <<< FAILURE! - in com.IATF.runner.IATF_Runner
+To validate why attend functionality.To validate register as a visitor functionality  Time elapsed: 43.424 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='registration for iatf 2023']"}
+  (Session info: chrome=116.0.5845.180)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4db0d4a244bc34bba0a8e2707d3973e5, findElement {using=xpath, value=//p[text()='registration for iatf 2023']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.180, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65156}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65156/devtoo..., se:cdpVersion: 116.0.5845.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4db0d4a244bc34bba0a8e2707d3973e5
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="To validate why attend functionality" skipped="0" tests="2" time="109.5" timestamp="2023-09-12 05:52:03"><testcase name="To test Whyattend page"/><testcase name="To validate register as a visitor functionality"><failure message="Expected enabled element was not enabled&#10;Build info: version: '4.11.0', revision: '040bc5406b'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: unknown</failure><system-err>Expected enabled element was not enabled
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: unknown&#13;
+com.IATF.pages.IATF_Whyattend_pages.to_clickregister_tovisitbutton(IATF_Whyattend_pages.java:104)&#13;
+com.IATF.steps.IATF_Whyattend_steps.to_click_register_to_visit_button(IATF_Whyattend_steps.java:67)&#13;
+✽.To click register to visit button(file:///C:/Users/hp/eclipse-workspace/IATF_SerenityBDD_Framework/src/test/resources/IATF_features/IATF_Whyattend.feature:17)&#13;
+</system-err></testcase></testsuite>

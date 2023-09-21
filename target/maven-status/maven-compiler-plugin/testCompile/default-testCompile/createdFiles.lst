@@ -1,0 +1,5 @@
+com\IATF\steps\IATF_Homepage_steps.class
+com\IATF\pages\IATF_Whyattend_pages.class
+com\IATF\steps\IATF_Whyattend_steps.class
+com\IATF\pages\IATF_Homepage_pages.class
+com\IATF\runner\IATF_Runner.class

@@ -1,0 +1,207 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en-US"&gt;<br/>
+ &lt;head&gt; <br/>
+  &lt;style id="initialPageLoadSpinnerStyles"&gt;<br/>
+       .dragContainer {<br/>
+            position: absolute;<br/>
+            height: 6.25rem;<br/>
+            width: 6.25rem;<br/>
+            top: 40%;<br/>
+            left: 50%;<br/>
+            margin-left: -5rem;<br/>
+            display: none;<br/>
+        }<br/>
+<br/>
+        .outerContainer {<br/>
+            top: 50%;<br/>
+            display: flex;<br/>
+            justify-content: center;<br/>
+            align-items: center;<br/>
+            margin: 0 auto;<br/>
+            width: 11.75rem;<br/>
+            height: 11.75rem;<br/>
+            padding: 1rem;<br/>
+            background-color: #f7f8f9;<br/>
+            border-radius: 50%;<br/>
+            box-sizing: border-box;<br/>
+        }<br/>
+<br/>
+        .container {<br/>
+            position: relative;<br/>
+            margin: 0 auto;<br/>
+            transform: translateZ(0) rotate(.1);<br/>
+        }<br/>
+<br/>
+        .outerCircle {<br/>
+            width: 8.75rem;<br/>
+            height: 8.75rem;<br/>
+            top: 50%;<br/>
+            left: 60%;<br/>
+            animation-duration: 3s;<br/>
+            border-color: #006ae1 #006ae1 #aed4ff;<br/>
+            box-sizing: border-box;<br/>
+        }<br/>
+<br/>
+        .circle {<br/>
+            border-radius: 50%;<br/>
+            border-style: solid;<br/>
+            position: absolute;<br/>
+            border-width: 0.75rem;<br/>
+             width: 8.75rem;<br/>
+            height: 8.75rem;<br/>
+            top: 50%;<br/>
+            left: 60%;<br/>
+            animation: 3s linear infinite spinner;<br/>
+            animation-play-state: inherit;<br/>
+            box-sizing: border-box;<br/>
+        }<br/>
+<br/>
+        @keyframes spinner {<br/>
+            0% {<br/>
+                transform: translate3d(-50%, -50%, 0) rotate(0deg);<br/>
+            }<br/>
+<br/>
+            100% {<br/>
+                transform: translate3d(-50%, -50%, 0) rotate(360deg);<br/>
+            }<br/>
+        }<br/>
+        @media only screen and (max-width: 48em) {<br/>
+            html {<br/>
+              font-size: 75%;<br/>
+            }<br/>
+        }<br/>
+    &lt;/style&gt; <br/>
+  &lt;style&gt;<br/>
+      .defaultGlobalFont {<br/>
+        font-family: b99bc265-dca0-47b5-9ef9-66c3b7efa60b<br/>
+      }<br/>
+    &lt;/style&gt; <br/>
+  &lt;title&gt;Intra-African Trade Fair 2023&lt;/title&gt; <br/>
+  &lt;meta charset="UTF-8"&gt; <br/>
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt; <br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <br/>
+  &lt;meta name="description" content="IATF2023 Intra-African Trade Fair Afreximbank IATF"&gt; <br/>
+  &lt;meta name="title" content="Intra-African Trade Fair 2023."&gt; <br/>
+  &lt;script nonce="MXyWzuHGnO+Y1MweEC+q8RAvAEo="&gt;event_ui_mono_repo_1_0_0_SNAPSHOT_paths = 'https://www.cvent-assets.com/event-guestside-site/assets/';&lt;/script&gt; <br/>
+  &lt;link rel="canonical" href="https://web.cvent.com/event/2c16a9fa-7563-4e25-bc74-a66ecb7cbf47"&gt; <br/>
+  &lt;link nonce="MXyWzuHGnO+Y1MweEC+q8RAvAEo=" rel="icon" type="image/png" href="https://www.cvent-assets.com/event-guestside-site/assets/images/favicon.v2.ico"&gt; <br/>
+  &lt;link nonce="MXyWzuHGnO+Y1MweEC+q8RAvAEo=" rel="apple-touch-icon" type="image/png" href="https://www.cvent-assets.com/event-guestside-site/assets/images/favicon.v2.ico"&gt; <br/>
+  &lt;style id="richTextRendererStyles"&gt;&lt;/style&gt; <br/>
+  &lt;link rel="stylesheet" type="text/css" href="https://www.cvent-assets.com/event-guestside-site/assets/css/7304.prod.master_v16.ed91a9aa59590eddd53a.css" crossorigin="anonymous"&gt;<br/>
+  &lt;link rel="stylesheet" type="text/css" href="https://www.cvent-assets.com/event-guestside-site/assets/css/6157.prod.master_v16.fb98a2083426c1c33ed9.css" crossorigin="anonymous"&gt;<br/>
+  &lt;link rel="stylesheet" type="text/css" href="https://www.cvent-assets.com/event-guestside-site/assets/css/2639.prod.master_v16.df445ea214b6264c9997.css" crossorigin="anonymous"&gt;<br/>
+  &lt;link rel="stylesheet" type="text/css" href="https://www.cvent-assets.com/event-guestside-site/assets/css/160.prod.master_v16.38eea0c5935af26124c6.css" crossorigin="anonymous"&gt;<br/>
+  &lt;link rel="stylesheet" type="text/css" href="https://www.cvent-assets.com/event-guestside-site/assets/css/6878.prod.master_v16.e8992f7e8b6004fec2a8.css" crossorigin="anonymous"&gt;<br/>
+  &lt;link rel="stylesheet" type="text/css" href="https://www.cvent-assets.com/event-guestside-site/assets/css/appRenderer.prod.master_v16.085fd85703061b605d2d.css" crossorigin="anonymous"&gt;<br/>
+ &lt;/head&gt; <br/>
+ &lt;body class="defaultGlobalFont"&gt; <br/>
+  &lt;div class="dragContainer" id="initialPageLoadSpinner" style="display: none;"&gt; <br/>
+   &lt;div class="outerContainer"&gt; <br/>
+    &lt;div class="container"&gt; <br/>
+     &lt;div class="outerCircle circle"&gt;&lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+  &lt;/div&gt; <br/>
+  &lt;div id="react-mount"&gt;&lt;/div&gt; <br/>
+  &lt;script nonce="MXyWzuHGnO+Y1MweEC+q8RAvAEo=" type="text/javascript" crossorigin="anonymous" src="https://www.cvent-assets.com/event-guestside-site/assets/runtime.prod.master_v16.0f206d42ca8a6c892575.js"&gt;&lt;/script&gt; <br/>
+  &lt;script nonce="MXyWzuHGnO+Y1MweEC+q8RAvAEo=" type="text/javascript" crossorigin="anonymous" src="https://www.cvent-assets.com/event-guestside-site/assets/1629.prod.master_v16.95496e2654e11c47bdda.js"&gt;&lt;/script&gt; <br/>
+  &lt;script nonce="MXyWzuHGnO+Y1MweEC+q8RAvAEo=" type="text/javascript" crossorigin="anonymous" src="https://www.cvent-assets.com/event-guestside-site/assets/8496.prod.master_v16.22e1b7e2920ca29c14d8.js"&gt;&lt;/script&gt; <br/>
+  &lt;script nonce="MXyWzuHGnO+Y1MweEC+q8RAvAEo=" type="text/javascript" crossorigin="anonymous" src="https://www.cvent-assets.com/event-guestside-site/assets/main.prod.master_v16.f75405ac3981a046a87d.js"&gt;&lt;/script&gt; <br/>
+  &lt;script nonce="MXyWzuHGnO+Y1MweEC+q8RAvAEo="&gt;<br/>
+    window.CVENT = {<br/>
+      codeSnippets: {},<br/>
+      codeSnippetsWithResolvedDatatags: {},<br/>
+      addTriggerHandlers: function (event, triggerHandler) {<br/>
+        if (!this.codeSnippets[event]) {<br/>
+          this.codeSnippets[event] = [];<br/>
+        }<br/>
+        this.codeSnippets[event].push(triggerHandler);<br/>
+      },<br/>
+      runTriggerHandlers: function (event) {<br/>
+        if (this.codeSnippetsWithResolvedDatatags[event] && this.codeSnippetsWithResolvedDatatags[event].length &gt; 0) {<br/>
+          let handlers = this.codeSnippetsWithResolvedDatatags[event];<br/>
+          for (let i=0; i &lt; handlers.length; i++) {<br/>
+            try {<br/>
+              new Function(handlers[i])();<br/>
+            } catch (ex) {<br/>
+              // ignore errors in third-party snippets<br/>
+              console.error(`error in code snippet for ${event}`, ex);<br/>
+            }<br/>
+          }<br/>
+        }<br/>
+      },<br/>
+      experiments: {"flex_address_widget_customization":2,"flex_air_actual_opt_out":1,"email_order_details_widget":0,"advanced_group_purchase":0,"hotel_widget_room_details_grid":0,"utm_parameters_custom_logic":0,"reg_text_writing_assistant":1,"hotel_widget_remove_cancel_done_button":0,"search_engine_optimization":0,"event_container_version":15,"email_calendar_widget":1,"content_release_jul_12_23":0,"src_agenda_session_share_link":0,"flex_ccf_link_logic":1,"flex_initial_load_spinner":0,"flex_copy_webpages":1,"flex_enable_registration_paths_localization":1,"event_snapshot_version_create_reg_cart":1,"flex_pre_select_hotel_and_room":1,"flex_widget_hiding":{"widgets":[{"widgetType":"Sessions","isEnabled":true}]},"flex_address_widget_set_order":1,"alternate_travel_ques_for_guest":1,"flex_lock_fields":0,"flex_widget_visibility_logic":{"permittedList":{"NucleusText":{"widgetType":"NucleusText","isEnabled":true},"EventStandardContactFieldAddress":{"widgetType":"EventStandardContactFieldAddress","isEnabled":true},"EventStandardContactFieldChoice":{"widgetType":"EventStandardContactFieldChoice","isEnabled":true},"EventStandardContactFieldDateTime":{"widgetType":"EventStandardContactFieldDateTime","isEnabled":true},"EventStandardContactFieldImage":{"widgetType":"EventStandardContactFieldImage","isEnabled":true},"EventStandardContactFieldText":{"widgetType":"EventStandardContactFieldText","isEnabled":true},"EventStandardContactSecureFieldText":{"widgetType":"EventStandardContactSecureFieldText","isEnabled":true},"EventCustomContactFieldChoice":{"widgetType":"EventCustomContactFieldChoice","isEnabled":true},"EventCustomContactFieldSingleChoice":{"widgetType":"EventCustomContactFieldSingleChoice","isEnabled":true},"EventCustomContactFieldMultiChoice":{"widgetType":"EventCustomContactFieldMultiChoice","isEnabled":true},"EventCustomContactFieldDateTime":{"widgetType":"EventCustomContactFieldDateTime","isEnabled":true},"EventCustomContactFieldText":{"widgetType":"EventCustomContactFieldText","isEnabled":true},"ChoiceQuestion":{"widgetType":"ChoiceQuestion","isEnabled":true},"OpenEndedTextQuestion":{"widgetType":"OpenEndedTextQuestion","isEnabled":true},"DateTimeQuestion":{"widgetType":"DateTimeQuestion","isEnabled":true},"ConsentQuestion":{"widgetType":"ConsentQuestion","isEnabled":true},"FileUploadQuestion":{"widgetType":"FileUploadQuestion","isEnabled":true},"MatrixQuestion":{"widgetType":"MatrixQuestion","isEnabled":true}}},"feature_release":18,"flex_add_multiple_group_member_reg_mod":0,"registration_cpra":1,"flex_manage_cookie_preferences":1,"flex_use_graphql_question_data":null,"google_wallet_widget":0,"flex_personal_info_weblink_readonly":0,"registration_data_integrity":4,"display_taxes_throughout_reg":1,"flex_new_cookie_banner":1,"custom_widgets_sdk":0,"flex_use_v3_capacity_endpoint":0,"hide_legacy_agenda_widget":1,"hotel_widget_travel_usability_refresh":1,"reg_planner_travel_air_modification":0,"content_release_aug_30_23":1,"flex_website_speaker_redesign":0,"reg_site_container_widget":0,"flex_async_site_publish":1,"flex_remove_registration_restriction":1,"flex_use_graphql_account_translation_data":{"version":0},"flex_continuous_performance_improvement":{"version":6},"tie_cookie_banner_to_analytics":2,"dont_autofill_group_member":0}<br/>
+    }<br/>
+    const showLoading = window.CVENT.experiments.flex_initial_load_spinner;<br/>
+    if (showLoading) {<br/>
+       document.getElementById('initialPageLoadSpinner').style.display = 'block';<br/>
+    } else {<br/>
+        document.getElementById('initialPageLoadSpinner').style.display = 'none';<br/>
+    }<br/>
+  &lt;/script&gt; <br/>
+  &lt;script nonce="MXyWzuHGnO+Y1MweEC+q8RAvAEo="&gt;<br/>
+    <br/>
+  &lt;/script&gt; <br/>
+  &lt;script nonce="MXyWzuHGnO+Y1MweEC+q8RAvAEo="&gt;&lt;/script&gt; <br/>
+  &lt;script nonce="MXyWzuHGnO+Y1MweEC+q8RAvAEo="&gt;<br/>
+      <br/>
+  &lt;/script&gt; <br/>
+  &lt;script nonce="MXyWzuHGnO+Y1MweEC+q8RAvAEo=" nomodule="" id="internet-explorer-is-dead" src="https://www.cvent-assets.com/event-guestside-site/assets/internet-explorer-is-dead.v6.min.js" data-asset-root="https://www.cvent-assets.com/event-guestside-site/assets/" data-culture-code="en-gb"&gt;&lt;/script&gt; <br/>
+  &lt;script nonce="MXyWzuHGnO+Y1MweEC+q8RAvAEo="&gt;<br/>
+    function applicationInit() {<br/>
+      window.version = '2.14.1';<br/>
+<br/>
+      var applicationSettings = {<br/>
+        viewRoot: '/event',<br/>
+        accountName: 'AFRUS00016',<br/>
+        createdBy: '',<br/>
+        analyticsUrl: 'https://io.cvent.com/factor',<br/>
+        analyticsUrlPath: '/dai/v1/batch_facts',<br/>
+        attendeeExperienceUrl: 'https://web.cvent.com/hub/',<br/>
+        webPaymentsSettings: '{"webPaymentsEndpoint":"https://webpayments-service-production.us-east-1.lb.cvent.com/pr50/webpayments/","webPaymentsApplicationId":"aZM6pToAdoEpHZZw0g5wSelws7T2BL73FIea1HZpaTOgQlc3Xg.6ggfFxVRmGYsf0bySAd8ZSA1uzY8hE.FQ3SnSHUXOkul4jCv.vTfEDw85qpJvu07Ju3YDPmQz.UcxgvstlsRPtKtJUJ0BjqXdxA--","webPaymentsPermanentApplicationId":"aZM6pToAdoEpHZZw0g5wSVvVL7Hf1sIS6cDRyFP0QXdrk8Q9VN0Hh4l4B.mv2kSgQCY3JGGdM7TwFN.BPa6iwq5ep8LhRATKkgI1VBARx1Vf5eNE9uA7bGhPt8AHnIS9AxrWrgj0SXA2eWjpWhJw7Q--"}',<br/>
+        assetRoot: 'https://www.cvent-assets.com/event-guestside-site/assets/',<br/>
+        baseName: '',<br/>
+        environment: '',<br/>
+        isDebug: false,<br/>
+        eventContext: {"isValid":true,"eventId":"2c16a9fa-7563-4e25-bc74-a66ecb7cbf47","abandonedReg":false,"viewMode":"standard","isPlanner":false,"isPreview":false,"sessionId":"node07b3y42sa3i53xp9p38698uqu350579","abortRegistrationSecondsDelay":10},<br/>
+        accessToken: 'BEARER b22ff62ca0f7ea7b05783d72b64f87b5',<br/>
+        sessionId: 'node07b3y42sa3i53xp9p38698uqu350579',<br/>
+        serviceBaseUrl: '/event_guest',<br/>
+        logToServer: true,<br/>
+        googleApiKey: 'AIzaSyA6U2aYrgvYFLyAfaeC2BLu4ehED0EIG0U',<br/>
+        eventLaunchWizardSettings: '{"isMerchantCPS":false,"showBankAccount":false,"openLaunchWizard":false,"remittanceType":"bank","isSalesForceIdPresent":false}',<br/>
+        plannerRegSettings: {<br/>
+          successUrl: '',<br/>
+          exitUrl: '',<br/>
+          sendEmail: true,<br/>
+          modificationRequest: null,<br/>
+          apolloServerBaseUrl: '',<br/>
+        },<br/>
+        cultureCode: 'en-gb',<br/>
+        eventTimezoneId: 120,<br/>
+        capacityIds: ["2c16a9fa-7563-4e25-bc74-a66ecb7cbf47","9a730916-d9d2-4af9-8619-638aaff8a744","49d77586-064d-4608-86f6-75bc2cce5abe","2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::00000000-0000-0000-0000-000000000000","2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::440dc8e3-0f47-4e4b-be77-079635831600","registrationtype::2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::c2053524-4822-4e7f-ba6d-94292e5b9623::virtual","2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::468f4a85-56fe-4a82-b404-2ffd3d441609","2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::7c8d67d7-4e9f-4c9f-a18a-149eda10f05d","registrationtype::2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::05fc60ad-cc90-4cd9-89a3-b93813bc93fc::virtual","registrationtype::2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::b75d2b7f-95b0-4902-9835-9a1e9a96da2b::virtual","registrationtype::2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::3f726541-edd9-4230-89a1-27e2c62fe03b::virtual","2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::bcff7c0c-e271-4b1a-b4ed-b0d25c2c8b44","2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::9506f36f-bec1-415b-8975-290b7b9aaec6","registrationtype::2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::4856e5cd-e39d-40ea-b85e-0f2ffb62d32a::virtual","registrationtype::2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::fc41c93f-eab2-4d65-8fa7-862c71e8c2dd::virtual","registrationtype::2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::96f1381a-03d6-4e2a-818f-8f81b560bee7::virtual","2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::874ec992-9103-472c-88af-39bfd410f8ac","2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::34c86155-ca50-49f7-83d2-58d3c396d88d","2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::4a400ae1-8ad8-4f1e-a54a-044d6920b124","2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::61bf190e-0cbe-4099-bcd7-eae4230f744d","registrationtype::2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::d56f120d-b2d7-4b7d-b9c0-9a12f7613a53::virtual","2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::eebd2836-3d05-483e-a97e-e85b16e3b81c","2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::e2027376-dd7d-4271-adf3-9110a14f6f78","registrationtype::2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::c71ae866-cf96-4c72-bb01-6109b4ded8e3::virtual","registrationtype::2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::094c82d5-2ed0-42eb-88d6-30dea50d54d7::virtual","registrationtype::2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::99503709-8851-4b29-a702-3dde73ad8861::virtual","2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::9e7ad928-02cf-4600-aa69-fba687dc5678","2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::0b5b13d6-9bc8-41aa-8925-1f15c70a6b6c","2c16a9fa-7563-4e25-bc74-a66ecb7cbf47::698d3230-9e95-4f89-b000-22a7278043fb"],<br/>
+        isTravelEnabled: false,<br/>
+        accountSnapshotVersion: 'XjAOYiAGZOEosgvaPYs9OAz1vRprchwz',<br/>
+        eventSnapshotVersion: 'l0_gCKPd1.vrzsZ9h7xAq4ExeK5aw35T',<br/>
+        travelSnapshotVersion: '',<br/>
+        experiments: {"flexSsoAdminRegManage":true,"useProductVisibilityService":true,"granularSiteLoading":true,"isUserTextLoadedOnlyForSecondaryLanguage":true,"isFlexWebsiteAgendaRedesignEnabled":true,"preventAdmissionItemSelectionDuringRegMod":false,"isFixWaitlistForHybridEventsEnabled":true,"flexCacheRegCartPricing":true,"isMovePrivacyComplianceFromSiteEditorEnabled":true,"featureRelease":18,"isApptsNewInterestWidgetEnabled":true,"useGraphQLCustomContactFieldData":6,"flexWidgetVisibilityLogicMetadata":"{\"permittedList\":{\"NucleusText\":{\"widgetType\":\"NucleusText\",\"isEnabled\":true},\"EventStandardContactFieldAddress\":{\"widgetType\":\"EventStandardContactFieldAddress\",\"isEnabled\":true},\"EventStandardContactFieldChoice\":{\"widgetType\":\"EventStandardContactFieldChoice\",\"isEnabled\":true},\"EventStandardContactFieldDateTime\":{\"widgetType\":\"EventStandardContactFieldDateTime\",\"isEnabled\":true},\"EventStandardContactFieldImage\":{\"widgetType\":\"EventStandardContactFieldImage\",\"isEnabled\":true},\"EventStandardContactFieldText\":{\"widgetType\":\"EventStandardContactFieldText\",\"isEnabled\":true},\"EventStandardContactSecureFieldText\":{\"widgetType\":\"EventStandardContactSecureFieldText\",\"isEnabled\":true},\"EventCustomContactFieldChoice\":{\"widgetType\":\"EventCustomContactFieldChoice\",\"isEnabled\":true},\"EventCustomContactFieldSingleChoice\":{\"widgetType\":\"EventCustomContactFieldSingleChoice\",\"isEnabled\":true},\"EventCustomContactFieldMultiChoice\":{\"widgetType\":\"EventCustomContactFieldMultiChoice\",\"isEnabled\":true},\"EventCustomContactFieldDateTime\":{\"widgetType\":\"EventCustomContactFieldDateTime\",\"isEnabled\":true},\"EventCustomContactFieldText\":{\"widgetType\":\"EventCustomContactFieldText\",\"isEnabled\":true},\"ChoiceQuestion\":{\"widgetType\":\"ChoiceQuestion\",\"isEnabled\":true},\"OpenEndedTextQuestion\":{\"widgetType\":\"OpenEndedTextQuestion\",\"isEnabled\":true},\"DateTimeQuestion\":{\"widgetType\":\"DateTimeQuestion\",\"isEnabled\":true},\"ConsentQuestion\":{\"widgetType\":\"ConsentQuestion\",\"isEnabled\":true},\"FileUploadQuestion\":{\"widgetType\":\"FileUploadQuestion\",\"isEnabled\":true},\"MatrixQuestion\":{\"widgetType\":\"MatrixQuestion\",\"isEnabled\":true}}}","flexProductVersion":68,"useGraphQLSiteEditorData":15,"waxAttendeeLogin":false,"flexTieCookieBannerToAnalyticsExperimentVariant":2,"isFlexDisplayTaxesThroughoutRegEnabled":true,"preventDedupeLogic":true,"useNewVisibleProductsForRegCart":0},<br/>
+        appleMapToken: 'eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlBYNVdSWUs4M1MifQ.eyJpYXQiOjE2NzkwMjQ4MTguMCwiZXhwIjoxNzQyMTgzMjc4LjAsImlzcyI6IjdYTFBTRzY5NlMifQ.TA5aT0SVgWy8S9pSU7qP-SLuKKZxCke3hOaEsreGL8Huc7iMKWVO7whG7pUT6yhI0EMUFe38T2IgYkiL2SEXGA',<br/>
+        appointmentsUrl: 'https://www.cvent.com/c/appointments',<br/>
+        deemUrl: 'https://www.cvent.com/Events/Registrations/RPA.aspx',<br/>
+        csrfToken: '',<br/>
+        datadogEnvironment: 'production',<br/>
+        captchaSiteKey: '6Ledvt8fAAAAABAJKKollVGM3zI1AxcwPREU5LlV',<br/>
+        eventLocales: [{localeId:1033,cultureCode:'en-US'}],<br/>
+        defaultCultureCode: 'en-US',<br/>
+        isAllowDetectLanguages: true,<br/>
+        hasMultipleLanguages: false<br/>
+      };<br/>
+      loadAssets(applicationSettings);<br/>
+  }<br/>
+    if (!window.cvtUnsupportedBrowser) {<br/>
+      applicationInit();<br/>
+    } else {<br/>
+      window.loadInUnsupportedBrowser = applicationInit;<br/>
+    }<br/>
+  &lt;/script&gt; <br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
