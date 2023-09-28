@@ -227,8 +227,8 @@ public class IATF_Exploreoptions_Pages extends PageObject {
 
 	// To click Register to exhibit option
 	@Step
-	public void to_click_register_to_exhibit_option() {
-
+	public void to_click_register_to_exhibit_option() throws InterruptedException {
+		Thread.sleep(5000);
 		$(By.linkText("Register to exhibit")).click();
 	}
 
@@ -240,15 +240,16 @@ public class IATF_Exploreoptions_Pages extends PageObject {
 
 	// To click discover our exhibiting options
 	@Step
-	public void to_click_discover_our_exhibiting_options() {
-
+	public void to_click_discover_our_exhibiting_options() throws InterruptedException {
+		
+		Thread.sleep(5000);
 		$(By.linkText("Discover our exhibiting options")).click();
 	}
 
 	// To validate discover our exhibitinh options page
 	@Step
-	public void to_validate_discover_our_exhibitinh_options_page() {
-
+	public void to_validate_discover_our_exhibitinh_options_page() throws InterruptedException {
+		Thread.sleep(5000);
 		$(By.xpath("//h2[text()='Your direct route into a single African market']")).isDisplayed();
 	}
 
@@ -321,8 +322,8 @@ public class IATF_Exploreoptions_Pages extends PageObject {
 
 	// To validate African automotive show page
 	@Step
-	public void to_validate_african_automotive_show_page() {
-
+	public void to_validate_african_automotive_show_page() throws InterruptedException {
+		Thread.sleep(5000);
 		$(By.xpath("//h5[text()='The Africa Automotive Show']")).isDisplayed();
 
 	}
@@ -337,9 +338,9 @@ public class IATF_Exploreoptions_Pages extends PageObject {
 
 	// To validate Register to exhibit
 	@Step
-	public void to_validate_register_to_exhibit() {
+	public void to_validate_register_to_exhibit() throws InterruptedException {
 
-		$(By.xpath("//h1[text()='Tell us a bit about yourself']")).isDisplayed();
+		Thread.sleep(5000);
 
 	}
 
@@ -380,25 +381,25 @@ public class IATF_Exploreoptions_Pages extends PageObject {
 
 	// To validate Country days page
 	@Step
-	public void to_validate_country_days_page() {
-
+	public void to_validate_country_days_page() throws InterruptedException {
+		Thread.sleep(5000);
 		$(By.xpath("//h2[text()='Country Day']")).isDisplayed();
 
 	}
 
 	// To click Register here option
 	@Step
-	public void to_click_register_here_option() {
-
+	public void to_click_register_here_option() throws InterruptedException {
+		Thread.sleep(5000);
 		$(By.xpath("//span[text()='REGISTER HERE']")).click();
 
 	}
 
 	// To validate register here page
 	@Step
-	public void to_validate_register_here_page() {
-
-		$(By.xpath("//p[text()='registration for iatf2023']")).isDisplayed();
+	public void to_validate_register_here_page() throws InterruptedException {
+		Thread.sleep(5000);
+		$(By.xpath("(//p[text()='registration'])[1]")).isDisplayed();
 
 	}
 

@@ -80,8 +80,8 @@ public class IATF_Exhibitors_Pages extends PageObject {
 	// Validate registor to visit page in exibitors
 	@Step
 	public void validate_registor_to_visit_page_in_exibitors() throws InterruptedException {
-		Thread.sleep(4000);
-		boolean displayed = $(By.xpath("//p[contains(text(),'registration for iatf 2023')]")).isDisplayed();
+		Thread.sleep(7000);
+		boolean displayed = $(By.xpath("(//p[contains(text(),'registration')])[1]")).isDisplayed();
 		Assert.assertTrue(displayed);
 	}
 

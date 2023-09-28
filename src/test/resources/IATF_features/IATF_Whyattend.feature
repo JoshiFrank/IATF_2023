@@ -9,7 +9,7 @@ Then Validate the Why attend five reason banner
 Then validate five banners
 Then validate dont miss your moment banner
 
-
+@last
 Scenario Outline: To validate register as a visitor functionality
 Given To open the IATF application
 When To click the Why attend option
@@ -44,7 +44,7 @@ And Enter the Company Address in required text box "<Line1>,<Line2>"
 And Enter the City "<City>"
 And Enter the ZIP/Postal code
 And Select the Country/Region from Dropdown
-And Select the State/Province from Dropdown
+And Select the State/Province from Dropdown "<state>"
 And Enter the Company website in required text box "<CompanyWeb>"
 And Enter the Telephone number(office/landline) "<Telephone>"
 And Select the Country of principle office from the Dropdown
@@ -52,8 +52,8 @@ And Select the Country of Head office from the Dropdown
 And Enter the Alternate Email Address "<AlterEmail>"
 And Enter the Alternate Contact Name "<Altername>"
 And Enter the Alternate Contact Number "<AlterNumer>"
-And Click the Required Radio button for What is your purchasing power Queation
-And Click the Required Radio button for What are your motivations for visiting
+#And Click the Required Radio button for What is your purchasing power Queation
+#And Click the Required Radio button for What are your motivations for visiting
 And Click the Required Radio button for What are the main geographical regions that you are interested in
 And Click next button for visitor page2
 Then Validate the User Navigate to the BUSINESS INFORMATION page
@@ -81,5 +81,5 @@ Then Validate the Registration Proced
 
 
 Examples:
-|Image|firstName|Lastname|Email|PhoneNumber|PassportNumber|File|ConatctName|ContactNum|Relation|Companyname|JobTitle|Line1|Line2|City|CompanyWeb|Telephone|AlterEmail|Altername|AlterNumer|
-|C:\\image\\testimage.png|Test1|Test2|Test2hhilh@gmail.com|986543210|4321649|C:\\image\\testimage.png|flipkart|98765432156|Relation|sampleCompany|Tester|Address1|Address2|denmork|www.company.com|9876543210|alter123@gmail.com|AlterName|987654320|
+|Image|firstName|Lastname|Email|PhoneNumber|PassportNumber|File|ConatctName|ContactNum|Relation|Companyname|JobTitle|Line1|Line2|City|state|CompanyWeb|Telephone|AlterEmail|Altername|AlterNumer|
+|C:\\image\\testimage.png|Test1|Test2|Tesseggofhhi@gmail.com|986543210|4321649|C:\\image\\testimage.png|flipkart|98765432156|Relation|sampleCompany|Tester|Address1|Address2|denmork|chicago|www.company.com|9876543210|alter123@gmail.com|AlterName|987654320|

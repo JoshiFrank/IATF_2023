@@ -173,7 +173,7 @@ public class IATF_Exploreoptions_Steps {
 	}
 
 	@Then("To click Register to exhibit option")
-	public void to_click_register_to_exhibit_option() {
+	public void to_click_register_to_exhibit_option() throws InterruptedException {
 		
 		exp.to_click_register_to_exhibit_option();
 	    
@@ -187,14 +187,14 @@ public class IATF_Exploreoptions_Steps {
 	}
 
 	@Then("To click discover our exhibiting options")
-	public void to_click_discover_our_exhibiting_options() {
+	public void to_click_discover_our_exhibiting_options() throws InterruptedException {
 		
 		exp.to_click_discover_our_exhibiting_options();
 	    
 	}
 
 	@Then("To validate discover our exhibitinh options page")
-	public void to_validate_discover_our_exhibitinh_options_page() {
+	public void to_validate_discover_our_exhibitinh_options_page() throws InterruptedException {
 		
 		exp.to_validate_discover_our_exhibitinh_options_page();
 	    
@@ -252,7 +252,7 @@ public class IATF_Exploreoptions_Steps {
 	}
 
 	@Then("To validate African automotive show page")
-	public void to_validate_african_automotive_show_page() {
+	public void to_validate_african_automotive_show_page() throws InterruptedException {
 		
 		exp.to_validate_african_automotive_show_page();
 	    
@@ -266,7 +266,7 @@ public class IATF_Exploreoptions_Steps {
 	}
 
 	@Then("To validate Register to exhibit")
-	public void to_validate_register_to_exhibit() {
+	public void to_validate_register_to_exhibit() throws InterruptedException {
 		
 		exp.to_validate_register_to_exhibit();
 	    
@@ -294,21 +294,21 @@ public class IATF_Exploreoptions_Steps {
 	}
 
 	@Then("To validate Country days page")
-	public void to_validate_country_days_page() {
+	public void to_validate_country_days_page() throws InterruptedException {
 		
 		exp.to_validate_country_days_page();
 	    
 	}
 
 	@Then("To click Register here option")
-	public void to_click_register_here_option() {
+	public void to_click_register_here_option() throws InterruptedException {
 		
 		exp.to_click_register_here_option();
 	    
 	}
 
 	@Then("To validate register here page")
-	public void to_validate_register_here_page() {
+	public void to_validate_register_here_page() throws InterruptedException {
 		
 		exp.to_validate_register_here_page();
 	    

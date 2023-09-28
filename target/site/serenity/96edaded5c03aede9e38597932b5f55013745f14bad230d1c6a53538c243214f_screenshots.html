@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">IATF 2023</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="3b46056be65e48ce90cd2a55259eb15ec7243fe62df586208a58783a0e014070.html">To Validate Conference Delegate Functionality</a></span>
+                > <span class="truncate-60"><a
+                    href="96edaded5c03aede9e38597932b5f55013745f14bad230d1c6a53538c243214f.html">To validate register as a conference delegate functionality </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 27-09-2023 18:06</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">To Validate Conference Delegate Functionality</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6fe0671aeea9e76b6998ee682216d11c7748a4152740df0586f3c256ecb3f5da.html">Chrome
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.html">Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="f7e5e3b44927bc183d1ef8e37c087a596c5468c32f02a89e8e25d0710f3ebd8a.html">Fe1
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="59736924e81ea98f655ac8eba7cd96079d8d80131e0c4360daf32a724d0b38a0.html">Chrome, Windows
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">To validate register as a conference delegate functionality
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given To open the IATF application<br>When To click the Why attend option<br>Then Validate the Why attend page<br>And To click register to visit button<br>When To click register as a conference delegate option<br>And Upload profile image for conference delegate "&lt;Image&gt;"<br>And Select gender for conference delegate<br>And Select title for conference delegate<br>And Enter first name for conference delegate "&lt;firstName&gt;"<br>And Enter Last Name for conference delegate "&lt;Lastname&gt;"<br>And Enter Email Address for conference delegate "&lt;Email&gt;"<br>And Select country code for conference delegate<br>And Enter mobile number for conference delegate "&lt;PhoneNumber&gt;"<br>And Enter passport number for conference delegate "&lt;PassportNumber&gt;"<br>And Select passport issued date for conference delegate<br>And Select passport expiry date for conference delegate<br>And Upload passport document for conference delegate "&lt;File&gt;"<br>And Enter emergency contact name for conference delegate "&lt;ContactName&gt;"<br>And Select emergency contact country code for conference delegate<br>And Enter emergency contact number for conference delegate "&lt;ContactNum&gt;"<br>And Enter emergency contact relationship for conference delegate "&lt;Relation&gt;"<br>And Click next button for conference delegate page<br>When Enter the Company name required text box conference delegate "&lt;Companyname&gt;"<br>And Enter the Job title  conference delegate "&lt;JobTitle&gt;"<br>And Enter the Company Address in required text box conference delegate "&lt;Line1&gt;,&lt;Line2&gt;"<br>And Enter the City conference delegate "&lt;City&gt;"<br>And Enter the ZIP/Postal code conference delegate<br>And Select the Country/Region from Dropdown conference delegate<br>And Select the State/Province from Dropdown conference delegate<br>And Enter the Company website in required text box conference delegate "&lt;CompanyWeb&gt;"<br>And Enter the Telephone number(office/landline) conference delegate "&lt;Telephone&gt;"<br>And Select the Country of principle office from the Dropdown conference delegate<br>And Select the Country of Head office from the Dropdown conference delegate<br>And Enter the Alternate Contact Name conference delegate "&lt;Altername&gt;"<br>And Enter the Alternate Contact Number conference delegate "&lt;AlterNumer&gt;"<br>And Enter the Alternate Email Address conference delegate "&lt;AlterEmail&gt;"<br>And Click the Required Radio button for Eastern Africa<br>And Click next button for conference delegate two<br>When Select the Size of your Company from Dropdown conference delegate<br>And Select Parchasing amount of your Company from Dropdown conference delegate<br>And Select Annual turnover of your Company conference delegate<br>And Click Required Business Objectives conference delegate<br>And Click next button for conference delegate Three<br>When Select the Required sessions you'd like to attend conference delegate<br>And Click next button for conference delegate four<br>And Click Submite button conference delegate five<br>Then Validate the Registration successfull conference delegate</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="76d979999a007be40f25bf1be23936878a8b906d4b8dcfb142210c0feefab61c.png" title=" 1: To validate register as a conference delegate functionality ({Image=C:\image\testimage.png, firstName=Test1, Lastname=Test2, Email=Test97hfhkkdkkjtljihgfefi@gmail.com, PhoneNumber=986543210, PassportNumber=4321649, File=C:\image\testimage.png, ContactName=amazon, ContactNum=98765432156, Relation=Relation, Companyname=sampleCompany, JobTitle=Tester, Line1=Address1, Line2=Address2, City=denmork, CompanyWeb=www.company.com, Telephone=9876543210, AlterEmail=alter123@gmail.com, Altername=AlterName, AlterNumer=987654320})" width="1920"/>
+                <img src="76d979999a007be40f25bf1be23936878a8b906d4b8dcfb142210c0feefab61c.png" title=" Given To open the IATF application" width="1920"/>
+                <img src="76d979999a007be40f25bf1be23936878a8b906d4b8dcfb142210c0feefab61c.png" title=" When To click the Why attend option" width="1920"/>
+                <img src="76d979999a007be40f25bf1be23936878a8b906d4b8dcfb142210c0feefab61c.png" title=" Toclick thewhyattendoption" width="1920"/>
+                <img src="c911dc0e9d6e9eb21e473df1754212e42d2ac397aaa6cc2f8b312b3378fedb8b.png" title=" Toclick thewhyattendoption (completed)" width="1920"/>
+                <img src="c911dc0e9d6e9eb21e473df1754212e42d2ac397aaa6cc2f8b312b3378fedb8b.png" title=" When To click the Why attend option (completed)" width="1920"/>
+                <img src="c911dc0e9d6e9eb21e473df1754212e42d2ac397aaa6cc2f8b312b3378fedb8b.png" title=" Then Validate the Why attend page" width="1920"/>
+                <img src="c911dc0e9d6e9eb21e473df1754212e42d2ac397aaa6cc2f8b312b3378fedb8b.png" title=" Validate whyattendpage" width="1920"/>
+                <img src="68584559ecc04dd994008a351c3bbff4bcebea658a43dc8f8cfff479902ef88d.png" title=" Then Validate the Why attend page" width="1920"/>
+                <img src="68584559ecc04dd994008a351c3bbff4bcebea658a43dc8f8cfff479902ef88d.png" title=" Validate whyattendpage (completed)" width="1920"/>
+                <img src="68584559ecc04dd994008a351c3bbff4bcebea658a43dc8f8cfff479902ef88d.png" title=" And To click register to visit button" width="1920"/>
+                <img src="849ad87991fd2b9903c7df79455704e6418c27f13ad6b86411e5fc8681dc117e.png" title=" To clickregister tovisitbutton" width="1920"/>
+                <img src="aba0c5c449aa54c57c75ec622fccf9c6d9afadf093c0d6fbd7e1602035070e6d.png" title=" To clickregister tovisitbutton (completed)" width="1920"/>
+                <img src="aba0c5c449aa54c57c75ec622fccf9c6d9afadf093c0d6fbd7e1602035070e6d.png" title=" And To click register to visit button (completed)" width="1920"/>
+                <img src="aba0c5c449aa54c57c75ec622fccf9c6d9afadf093c0d6fbd7e1602035070e6d.png" title=" When To click register as a conference delegate option" width="1920"/>
+                <img src="aba0c5c449aa54c57c75ec622fccf9c6d9afadf093c0d6fbd7e1602035070e6d.png" title=" To click register as a conference delegate option" width="1920"/>
+                <img src="87a49f3581ca332187df03c61ce1035d618f44742272879218f08091e9f74b2c.png" title=" To click register as a conference delegate option (completed)" width="1920"/>
+                <img src="87a49f3581ca332187df03c61ce1035d618f44742272879218f08091e9f74b2c.png" title=" When To click register as a conference delegate option (completed)" width="1920"/>
+                <img src="87a49f3581ca332187df03c61ce1035d618f44742272879218f08091e9f74b2c.png" title=" And Upload profile image for conference delegate &quot;C:\image\testimage.png&quot;" width="1920"/>
+                <img src="87a49f3581ca332187df03c61ce1035d618f44742272879218f08091e9f74b2c.png" title=" Upload profile image for conference delegate: C:\image\testimage.png" width="1920"/>
+                <img src="c2b2e6cfc8986319cfa979fa946e281a48264368ceabda3e4f897a31b651f648.png" title=" Upload profile image for conference delegate: C:\image\testimage.png (completed)" width="1920"/>
+                <img src="c2b2e6cfc8986319cfa979fa946e281a48264368ceabda3e4f897a31b651f648.png" title=" And Upload profile image for conference delegate &quot;C:\image\testimage.png&quot; (completed)" width="1920"/>
+                <img src="c2b2e6cfc8986319cfa979fa946e281a48264368ceabda3e4f897a31b651f648.png" title=" And Select gender for conference delegate" width="1920"/>
+                <img src="c2b2e6cfc8986319cfa979fa946e281a48264368ceabda3e4f897a31b651f648.png" title=" Select gender for conference delegate" width="1920"/>
+                <img src="d201f551fdbe9502d8c2ba648744dc9d7aae29fcbff73a009ef78442c6e84c01.png" title=" And Select gender for conference delegate" width="1920"/>
+                <img src="d201f551fdbe9502d8c2ba648744dc9d7aae29fcbff73a009ef78442c6e84c01.png" title=" Select gender for conference delegate (completed)" width="1920"/>
+                <img src="d201f551fdbe9502d8c2ba648744dc9d7aae29fcbff73a009ef78442c6e84c01.png" title=" And Select title for conference delegate" width="1920"/>
+                <img src="d201f551fdbe9502d8c2ba648744dc9d7aae29fcbff73a009ef78442c6e84c01.png" title=" Select title for conference delegate" width="1920"/>
+                <img src="3afb672fdbff459eb91fcc1571184b49276d35d83fdb4bc4ae901ff3558dd0eb.png" title=" Select title for conference delegate (completed)" width="1920"/>
+                <img src="3afb672fdbff459eb91fcc1571184b49276d35d83fdb4bc4ae901ff3558dd0eb.png" title=" And Select title for conference delegate (completed)" width="1920"/>
+                <img src="3afb672fdbff459eb91fcc1571184b49276d35d83fdb4bc4ae901ff3558dd0eb.png" title=" And Enter first name for conference delegate &quot;Test1&quot;" width="1920"/>
+                <img src="3afb672fdbff459eb91fcc1571184b49276d35d83fdb4bc4ae901ff3558dd0eb.png" title=" Enter first name for conference delegate: Test1" width="1920"/>
+                <img src="52e1f5a552cd307eb592c0a9a48b4228cd948a4edd5696463f0cec4743192542.png" title=" And Enter first name for conference delegate &quot;Test1&quot;" width="1920"/>
+                <img src="52e1f5a552cd307eb592c0a9a48b4228cd948a4edd5696463f0cec4743192542.png" title=" Enter first name for conference delegate: Test1 (completed)" width="1920"/>
+                <img src="52e1f5a552cd307eb592c0a9a48b4228cd948a4edd5696463f0cec4743192542.png" title=" And Enter Last Name for conference delegate &quot;Test2&quot;" width="1920"/>
+                <img src="f05fef86fd381c14b3e9b62db82a6581cbe1ba7e393199f420a33748e664b506.png" title=" Enter last name for conference delegate: Test2" width="1920"/>
+                <img src="f61d43744ae60b79a6570edd82da755351eee321148385370f31b6d842158878.png" title=" And Enter Last Name for conference delegate &quot;Test2&quot;" width="1920"/>
+                <img src="f61d43744ae60b79a6570edd82da755351eee321148385370f31b6d842158878.png" title=" Enter last name for conference delegate: Test2 (completed)" width="1920"/>
+                <img src="f61d43744ae60b79a6570edd82da755351eee321148385370f31b6d842158878.png" title=" And Enter Email Address for conference delegate &quot;Test97hfhkkdkkjtljihgfefi@gmail.com&quot;" width="1920"/>
+                <img src="ba1b696b69982397b500ee97ce4ec1a121edc9d711f1ad21c3282845b6fb6f72.png" title=" Enter email address for conference delegate: Test97hfhkkdkkjtljihgfefi@gmail.com" width="1920"/>
+                <img src="ad6cf78cb676789c8c6c199bf933912916fad3b47e88c3eefabf6197a93706b5.png" title=" Enter email address for conference delegate: Test97hfhkkdkkjtljihgfefi@gmail.com (completed)" width="1920"/>
+                <img src="ad6cf78cb676789c8c6c199bf933912916fad3b47e88c3eefabf6197a93706b5.png" title=" And Enter Email Address for conference delegate &quot;Test97hfhkkdkkjtljihgfefi@gmail.com&quot; (completed)" width="1920"/>
+                <img src="ad6cf78cb676789c8c6c199bf933912916fad3b47e88c3eefabf6197a93706b5.png" title=" And Select country code for conference delegate" width="1920"/>
+                <img src="483c93ef96973a43043b1d9dd94b72946fda2fcc55e45bb832a7eaa2c6939c7d.png" title=" Select country code for conference delegate" width="1920"/>
+                <img src="7713cf2127acc2d94fb6758c1a02d020423d31546da314f651d89ea266d60c19.png" title=" Select country code for conference delegate (completed)" width="1920"/>
+                <img src="7713cf2127acc2d94fb6758c1a02d020423d31546da314f651d89ea266d60c19.png" title=" And Select country code for conference delegate (completed)" width="1920"/>
+                <img src="7713cf2127acc2d94fb6758c1a02d020423d31546da314f651d89ea266d60c19.png" title=" And Enter mobile number for conference delegate &quot;986543210&quot;" width="1920"/>
+                <img src="06d75b3860830c8cd46bc558902bea09140cce32f77a93da538b4849bb0cf633.png" title=" Enter mobile number for conference delegate: 986543210" width="1920"/>
+                <img src="39056e9c19aac50b7842491f2d343b45e04cf2d9beb130187b9b5fd1935c9086.png" title=" Enter mobile number for conference delegate: 986543210 (completed)" width="1920"/>
+                <img src="39056e9c19aac50b7842491f2d343b45e04cf2d9beb130187b9b5fd1935c9086.png" title=" And Enter mobile number for conference delegate &quot;986543210&quot; (completed)" width="1920"/>
+                <img src="39056e9c19aac50b7842491f2d343b45e04cf2d9beb130187b9b5fd1935c9086.png" title=" And Enter passport number for conference delegate &quot;4321649&quot;" width="1920"/>
+                <img src="4b2d3700826f1313f959952d0009218de661b31d85701b0ce56fb2551993bffd.png" title=" Enter passport number for conference delegate: 4321649" width="1920"/>
+                <img src="8e9f458b6b98697a1f74982358d00fb67969b018c6ba6cef5753cd52d8888355.png" title=" And Enter passport number for conference delegate &quot;4321649&quot;" width="1920"/>
+                <img src="8e9f458b6b98697a1f74982358d00fb67969b018c6ba6cef5753cd52d8888355.png" title=" Enter passport number for conference delegate: 4321649 (completed)" width="1920"/>
+                <img src="8e9f458b6b98697a1f74982358d00fb67969b018c6ba6cef5753cd52d8888355.png" title=" And Select passport issued date for conference delegate" width="1920"/>
+                <img src="344edacaac207cccce51e82176022af857d18af6161e17ea514626d71d3e9cda.png" title=" Select passport issued date for conference delegate" width="1920"/>
+                <img src="3e603519b616a73120055664e499119bc2eb988f1b8622f2a728ee2ed29b5b54.png" title=" And Select passport issued date for conference delegate" width="1920"/>
+                <img src="3e603519b616a73120055664e499119bc2eb988f1b8622f2a728ee2ed29b5b54.png" title=" Select passport issued date for conference delegate (completed)" width="1920"/>
+                <img src="3e603519b616a73120055664e499119bc2eb988f1b8622f2a728ee2ed29b5b54.png" title=" And Select passport expiry date for conference delegate" width="1920"/>
+                <img src="3e603519b616a73120055664e499119bc2eb988f1b8622f2a728ee2ed29b5b54.png" title=" Select passport expiry date for conference delegate" width="1920"/>
+                <img src="ca1f9c85133e49d9bbf3637feeb8cf916a2035038c6783a0cb5130a4ef74376a.png" title=" And Select passport expiry date for conference delegate" width="1920"/>
+                <img src="ca1f9c85133e49d9bbf3637feeb8cf916a2035038c6783a0cb5130a4ef74376a.png" title=" Select passport expiry date for conference delegate (completed)" width="1920"/>
+                <img src="ca1f9c85133e49d9bbf3637feeb8cf916a2035038c6783a0cb5130a4ef74376a.png" title=" And Upload passport document for conference delegate &quot;C:\image\testimage.png&quot;" width="1920"/>
+                <img src="ca1f9c85133e49d9bbf3637feeb8cf916a2035038c6783a0cb5130a4ef74376a.png" title=" Upload passport document for conference delegate: C:\image\testimage.png" width="1920"/>
+                <img src="3f6c0a30eb8b3df10c723562be912920453e299b85b9bb4d76e662dd5bfd8247.png" title=" And Upload passport document for conference delegate &quot;C:\image\testimage.png&quot;" width="1920"/>
+                <img src="3f6c0a30eb8b3df10c723562be912920453e299b85b9bb4d76e662dd5bfd8247.png" title=" Upload passport document for conference delegate: C:\image\testimage.png (completed)" width="1920"/>
+                <img src="3f6c0a30eb8b3df10c723562be912920453e299b85b9bb4d76e662dd5bfd8247.png" title=" And Enter emergency contact name for conference delegate &quot;amazon&quot;" width="1920"/>
+                <img src="3f6c0a30eb8b3df10c723562be912920453e299b85b9bb4d76e662dd5bfd8247.png" title=" Enter emergency contact name for conference delegate: amazon" width="1920"/>
+                <img src="bfbd0e368d18ae21b12307d15d633818d9031a81dfd38d544611e3759426b60c.png" title=" Enter emergency contact name for conference delegate: amazon (completed)" width="1920"/>
+                <img src="bfbd0e368d18ae21b12307d15d633818d9031a81dfd38d544611e3759426b60c.png" title=" And Enter emergency contact name for conference delegate &quot;amazon&quot; (completed)" width="1920"/>
+                <img src="bfbd0e368d18ae21b12307d15d633818d9031a81dfd38d544611e3759426b60c.png" title=" And Select emergency contact country code for conference delegate" width="1920"/>
+                <img src="bfbd0e368d18ae21b12307d15d633818d9031a81dfd38d544611e3759426b60c.png" title=" Select emergency contact country code for conference delegate" width="1920"/>
+                <img src="05993308248e6070d9f08b56627069103ad484e781b6996e6ffc41f41cdc6f8e.png" title=" Select emergency contact country code for conference delegate (completed)" width="1920"/>
+                <img src="05993308248e6070d9f08b56627069103ad484e781b6996e6ffc41f41cdc6f8e.png" title=" And Select emergency contact country code for conference delegate (completed)" width="1920"/>
+                <img src="05993308248e6070d9f08b56627069103ad484e781b6996e6ffc41f41cdc6f8e.png" title=" And Enter emergency contact number for conference delegate &quot;98765432156&quot;" width="1920"/>
+                <img src="05993308248e6070d9f08b56627069103ad484e781b6996e6ffc41f41cdc6f8e.png" title=" Enter emergency contact number for conference delegate: 98765432156" width="1920"/>
+                <img src="bce7816d052f1c7ddf3b671be3994d1fc8031204715e3a439fe7bea935e94822.png" title=" Enter emergency contact number for conference delegate: 98765432156 (completed)" width="1920"/>
+                <img src="bce7816d052f1c7ddf3b671be3994d1fc8031204715e3a439fe7bea935e94822.png" title=" And Enter emergency contact number for conference delegate &quot;98765432156&quot; (completed)" width="1920"/>
+                <img src="bce7816d052f1c7ddf3b671be3994d1fc8031204715e3a439fe7bea935e94822.png" title=" And Enter emergency contact relationship for conference delegate &quot;Relation&quot;" width="1920"/>
+                <img src="bce7816d052f1c7ddf3b671be3994d1fc8031204715e3a439fe7bea935e94822.png" title=" Enter emergency contact relationship for conference delegate: Relation" width="1920"/>
+                <img src="085ce4d5dc0e66d92364daf527c467abe18c479c57c372608e0bf03274fc180a.png" title=" Enter emergency contact relationship for conference delegate: Relation (completed)" width="1920"/>
+                <img src="085ce4d5dc0e66d92364daf527c467abe18c479c57c372608e0bf03274fc180a.png" title=" And Enter emergency contact relationship for conference delegate &quot;Relation&quot; (completed)" width="1920"/>
+                <img src="085ce4d5dc0e66d92364daf527c467abe18c479c57c372608e0bf03274fc180a.png" title=" And Click next button for conference delegate page" width="1920"/>
+                <img src="085ce4d5dc0e66d92364daf527c467abe18c479c57c372608e0bf03274fc180a.png" title=" Click next button for conference delegate page" width="1920"/>
+                <img src="854d97768349f46bfc9515e4b9c07985f58cef75da1650b87d6296885af6d573.png" title=" And Click next button for conference delegate page" width="1920"/>
+                <img src="854d97768349f46bfc9515e4b9c07985f58cef75da1650b87d6296885af6d573.png" title=" Click next button for conference delegate page (completed)" width="1920"/>
+                <img src="854d97768349f46bfc9515e4b9c07985f58cef75da1650b87d6296885af6d573.png" title=" When Enter the Company name required text box conference delegate &quot;sampleCompany&quot;" width="1920"/>
+                <img src="0e61300ee8787d01f8ea4df2c442cdb47f53883ea1af546a385873b5c712b751.png" title=" Enter the company name required text box conference delegate: sampleCompany" width="1920"/>
+                <img src="079c827b41e6271565b3d3b3f4ddf003720cc2abc1a703bd5d77ecaca373663d.png" title=" When Enter the Company name required text box conference delegate &quot;sampleCompany&quot;" width="1920"/>
+                <img src="079c827b41e6271565b3d3b3f4ddf003720cc2abc1a703bd5d77ecaca373663d.png" title=" Enter the company name required text box conference delegate: sampleCompany (completed)" width="1920"/>
+                <img src="079c827b41e6271565b3d3b3f4ddf003720cc2abc1a703bd5d77ecaca373663d.png" title=" And Enter the Job title  conference delegate &quot;Tester&quot;" width="1920"/>
+                <img src="61d6a2281fa6358e563959e55a321d349ceee93e8d7f4531edb5c876a6b9182f.png" title=" Enter the job title conference delegate: Tester" width="1920"/>
+                <img src="214a7dbf291c8ba9aa13d40df45e84e362d97a09f6264b98fbb5ae221de579a2.png" title=" Enter the job title conference delegate: Tester (completed)" width="1920"/>
+                <img src="214a7dbf291c8ba9aa13d40df45e84e362d97a09f6264b98fbb5ae221de579a2.png" title=" And Enter the Job title  conference delegate &quot;Tester&quot; (completed)" width="1920"/>
+                <img src="214a7dbf291c8ba9aa13d40df45e84e362d97a09f6264b98fbb5ae221de579a2.png" title=" And Enter the Company Address in required text box conference delegate &quot;Address1,Address2&quot;" width="1920"/>
+                <img src="f64cbc5153ffa1a1fe96308d6b3545cbaf2cfc90e9c5655a5b1219b303f337e0.png" title=" Enter the company address in required text box conference delegate: Address1,Address2, Address1,Address2" width="1920"/>
+                <img src="89e326cabbf40eba7c01e7606805fda2ff6fc0b3488b2ad9180698e89d7e9796.png" title=" And Enter the Company Address in required text box conference delegate &quot;Address1,Address2&quot;" width="1920"/>
+                <img src="89e326cabbf40eba7c01e7606805fda2ff6fc0b3488b2ad9180698e89d7e9796.png" title=" Enter the company address in required text box conference delegate: Address1,Address2, Address1,Address2 (completed)" width="1920"/>
+                <img src="89e326cabbf40eba7c01e7606805fda2ff6fc0b3488b2ad9180698e89d7e9796.png" title=" And Enter the City conference delegate &quot;denmork&quot;" width="1920"/>
+                <img src="89e326cabbf40eba7c01e7606805fda2ff6fc0b3488b2ad9180698e89d7e9796.png" title=" Enter the city conference delegate: denmork" width="1920"/>
+                <img src="75cdfeb30c81fb84c93bfa58cd711d6206b7247131dfd4117ff471ee8854dc45.png" title=" And Enter the City conference delegate &quot;denmork&quot;" width="1920"/>
+                <img src="75cdfeb30c81fb84c93bfa58cd711d6206b7247131dfd4117ff471ee8854dc45.png" title=" Enter the city conference delegate: denmork (completed)" width="1920"/>
+                <img src="75cdfeb30c81fb84c93bfa58cd711d6206b7247131dfd4117ff471ee8854dc45.png" title=" And Enter the ZIP/Postal code conference delegate" width="1920"/>
+                <img src="75cdfeb30c81fb84c93bfa58cd711d6206b7247131dfd4117ff471ee8854dc45.png" title=" Enter the zip postal code conference delegate" width="1920"/>
+                <img src="4bc951b3e72097ea86ce1769b91c0c58add9b3d68ceabf811b2bbde181bebae9.png" title=" Enter the zip postal code conference delegate (completed)" width="1920"/>
+                <img src="4bc951b3e72097ea86ce1769b91c0c58add9b3d68ceabf811b2bbde181bebae9.png" title=" And Enter the ZIP/Postal code conference delegate (completed)" width="1920"/>
+                <img src="4bc951b3e72097ea86ce1769b91c0c58add9b3d68ceabf811b2bbde181bebae9.png" title=" And Select the Country/Region from Dropdown conference delegate" width="1920"/>
+                <img src="4bc951b3e72097ea86ce1769b91c0c58add9b3d68ceabf811b2bbde181bebae9.png" title=" Select the country region from dropdown conference delegate" width="1920"/>
+                <img src="fb51bb9b2327de1ef613d33e3efc1d1a42ad74d282f4fa987baaa2b1334be828.png" title=" Select the country region from dropdown conference delegate (completed)" width="1920"/>
+                <img src="fb51bb9b2327de1ef613d33e3efc1d1a42ad74d282f4fa987baaa2b1334be828.png" title=" And Select the Country/Region from Dropdown conference delegate (completed)" width="1920"/>
+                <img src="fb51bb9b2327de1ef613d33e3efc1d1a42ad74d282f4fa987baaa2b1334be828.png" title=" And Select the State/Province from Dropdown conference delegate" width="1920"/>
+                <img src="fb51bb9b2327de1ef613d33e3efc1d1a42ad74d282f4fa987baaa2b1334be828.png" title=" Select the state province from dropdown conference delegate" width="1920"/>
+                <img src="63d3bb2026d313ba951c627b684259e20a390f2561a6bc46f89db05d71f476c3.png" title=" And Select the State/Province from Dropdown conference delegate" width="1920"/>
+                <img src="63d3bb2026d313ba951c627b684259e20a390f2561a6bc46f89db05d71f476c3.png" title=" Select the state province from dropdown conference delegate (completed)" width="1920"/>
+                <img src="63d3bb2026d313ba951c627b684259e20a390f2561a6bc46f89db05d71f476c3.png" title=" And Enter the Company website in required text box conference delegate &quot;www.company.com&quot;" width="1920"/>
+                <img src="63d3bb2026d313ba951c627b684259e20a390f2561a6bc46f89db05d71f476c3.png" title=" Enter the company website in required text box conference delegate: www.company.com" width="1920"/>
+                <img src="73f28d9350b301cdd6bdc26eae6c9253198d05ecd408301eadd340dbe8e29e32.png" title=" Enter the company website in required text box conference delegate: www.company.com (completed)" width="1920"/>
+                <img src="73f28d9350b301cdd6bdc26eae6c9253198d05ecd408301eadd340dbe8e29e32.png" title=" And Enter the Company website in required text box conference delegate &quot;www.company.com&quot; (completed)" width="1920"/>
+                <img src="73f28d9350b301cdd6bdc26eae6c9253198d05ecd408301eadd340dbe8e29e32.png" title=" And Enter the Telephone number(office/landline) conference delegate &quot;9876543210&quot;" width="1920"/>
+                <img src="73f28d9350b301cdd6bdc26eae6c9253198d05ecd408301eadd340dbe8e29e32.png" title=" Enter the telephone number office landline conference delegate: 9876543210" width="1920"/>
+                <img src="3885f257fe50637e2ad55bfe47e467c83d5400b584f8f3e9ec494230a31339a5.png" title=" And Enter the Telephone number(office/landline) conference delegate &quot;9876543210&quot;" width="1920"/>
+                <img src="3885f257fe50637e2ad55bfe47e467c83d5400b584f8f3e9ec494230a31339a5.png" title=" Enter the telephone number office landline conference delegate: 9876543210 (completed)" width="1920"/>
+                <img src="3885f257fe50637e2ad55bfe47e467c83d5400b584f8f3e9ec494230a31339a5.png" title=" And Select the Country of principle office from the Dropdown conference delegate" width="1920"/>
+                <img src="86bb60501e8f912b744c3e2ddaf5c720c3830ef2a399b57b8127b3c2f475b1ab.png" title=" Select the country of principle office from the dropdown conference delegate" width="1920"/>
+                <img src="01709437af28ce8b865d1336e0ffd1a11ca7336e9a892413a62a94019bb41063.png" title=" Select the country of principle office from the dropdown conference delegate (completed)" width="1920"/>
+                <img src="01709437af28ce8b865d1336e0ffd1a11ca7336e9a892413a62a94019bb41063.png" title=" And Select the Country of principle office from the Dropdown conference delegate (completed)" width="1920"/>
+                <img src="01709437af28ce8b865d1336e0ffd1a11ca7336e9a892413a62a94019bb41063.png" title=" And Select the Country of Head office from the Dropdown conference delegate" width="1920"/>
+                <img src="01709437af28ce8b865d1336e0ffd1a11ca7336e9a892413a62a94019bb41063.png" title=" Select the country of head office from the dropdown conference delegate" width="1920"/>
+                <img src="c5820c68d32274fcc7edfcb0db68004b8dbc1c384ab010430e9cb104806afdfd.png" title=" And Select the Country of Head office from the Dropdown conference delegate" width="1920"/>
+                <img src="c5820c68d32274fcc7edfcb0db68004b8dbc1c384ab010430e9cb104806afdfd.png" title=" Select the country of head office from the dropdown conference delegate (completed)" width="1920"/>
+                <img src="c5820c68d32274fcc7edfcb0db68004b8dbc1c384ab010430e9cb104806afdfd.png" title=" And Enter the Alternate Contact Name conference delegate &quot;AlterName&quot;" width="1920"/>
+                <img src="c5820c68d32274fcc7edfcb0db68004b8dbc1c384ab010430e9cb104806afdfd.png" title=" Enter the alternate contact name conference delegate: AlterName" width="1920"/>
+                <img src="dc8226623aef917ff2dfaeb143cef12abcb9a4cd1a4e543e3a49edcbdac740bc.png" title=" Enter the alternate contact name conference delegate: AlterName (completed)" width="1920"/>
+                <img src="dc8226623aef917ff2dfaeb143cef12abcb9a4cd1a4e543e3a49edcbdac740bc.png" title=" And Enter the Alternate Contact Name conference delegate &quot;AlterName&quot; (completed)" width="1920"/>
+                <img src="dc8226623aef917ff2dfaeb143cef12abcb9a4cd1a4e543e3a49edcbdac740bc.png" title=" And Enter the Alternate Contact Number conference delegate &quot;987654320&quot;" width="1920"/>
+                <img src="dc8226623aef917ff2dfaeb143cef12abcb9a4cd1a4e543e3a49edcbdac740bc.png" title=" Enter the alternate contact number conference delegate: 987654320" width="1920"/>
+                <img src="c5ac65449c8e4dd5be982c128b5d384fae0f2865f3302620acbc11c6cac86939.png" title=" Enter the alternate contact number conference delegate: 987654320 (completed)" width="1920"/>
+                <img src="c5ac65449c8e4dd5be982c128b5d384fae0f2865f3302620acbc11c6cac86939.png" title=" And Enter the Alternate Contact Number conference delegate &quot;987654320&quot; (completed)" width="1920"/>
+                <img src="c5ac65449c8e4dd5be982c128b5d384fae0f2865f3302620acbc11c6cac86939.png" title=" And Enter the Alternate Email Address conference delegate &quot;alter123@gmail.com&quot;" width="1920"/>
+                <img src="3d0ee944ed01395e26d39b4ef7ea91ed89152e52207343cc8c017b737f6a572c.png" title=" Enter the alternate email address conference delegate: alter123@gmail.com" width="1920"/>
+                <img src="30b9f6c6f55790fddbc5a655db850ad0d2d4047e85ae8d5cc10f957586dbab48.png" title=" And Enter the Alternate Email Address conference delegate &quot;alter123@gmail.com&quot;" width="1920"/>
+                <img src="30b9f6c6f55790fddbc5a655db850ad0d2d4047e85ae8d5cc10f957586dbab48.png" title=" Enter the alternate email address conference delegate: alter123@gmail.com (completed)" width="1920"/>
+                <img src="30b9f6c6f55790fddbc5a655db850ad0d2d4047e85ae8d5cc10f957586dbab48.png" title=" And Click the Required Radio button for Eastern Africa" width="1920"/>
+                <img src="91ed028cddb015889395c0936f34ef990fea7be10e0bf2319e2abf1862da763d.png" title=" Click the required radio button for eastern africa" width="1920"/>
+                <img src="d2d2b2863d05a7dec8e5ec45cfbf1dcb1cf036287f4f38d503c1d6d916215038.png" title=" Click the required radio button for eastern africa (completed)" width="1920"/>
+                <img src="d2d2b2863d05a7dec8e5ec45cfbf1dcb1cf036287f4f38d503c1d6d916215038.png" title=" And Click the Required Radio button for Eastern Africa (completed)" width="1920"/>
+                <img src="d2d2b2863d05a7dec8e5ec45cfbf1dcb1cf036287f4f38d503c1d6d916215038.png" title=" And Click next button for conference delegate two" width="1920"/>
+                <img src="d2d2b2863d05a7dec8e5ec45cfbf1dcb1cf036287f4f38d503c1d6d916215038.png" title=" Click next button for conference delegate two" width="1920"/>
+                <img src="786cd841617f4ebb0b941bdb6586abebeb48baf9abf14f7118f9686db72f9d36.png" title=" Click next button for conference delegate two (completed)" width="1920"/>
+                <img src="786cd841617f4ebb0b941bdb6586abebeb48baf9abf14f7118f9686db72f9d36.png" title=" And Click next button for conference delegate two (completed)" width="1920"/>
+                <img src="786cd841617f4ebb0b941bdb6586abebeb48baf9abf14f7118f9686db72f9d36.png" title=" When Select the Size of your Company from Dropdown conference delegate" width="1920"/>
+                <img src="8a7f983bc4a2b20b7837f112b9c1bf4918d4a7977d1ef6bba7a80b0480061bdc.png" title=" Select the size of your company from dropdown conference delegate" width="1920"/>
+                <img src="311213606aa43c67b86f6b72720cab5ffa1360f134cc2a9a6dd7c2c0efc26a60.png" title=" Select the size of your company from dropdown conference delegate (completed)" width="1920"/>
+                <img src="311213606aa43c67b86f6b72720cab5ffa1360f134cc2a9a6dd7c2c0efc26a60.png" title=" When Select the Size of your Company from Dropdown conference delegate (completed)" width="1920"/>
+                <img src="311213606aa43c67b86f6b72720cab5ffa1360f134cc2a9a6dd7c2c0efc26a60.png" title=" And Select Parchasing amount of your Company from Dropdown conference delegate" width="1920"/>
+                <img src="311213606aa43c67b86f6b72720cab5ffa1360f134cc2a9a6dd7c2c0efc26a60.png" title=" Select parchasing amount of your company from dropdown conference delegate" width="1920"/>
+                <img src="ad84d6a6d141f5a2c5120e486518806b60154a046458db8a2ec98e86bed7ef91.png" title=" And Select Parchasing amount of your Company from Dropdown conference delegate" width="1920"/>
+                <img src="ad84d6a6d141f5a2c5120e486518806b60154a046458db8a2ec98e86bed7ef91.png" title=" Select parchasing amount of your company from dropdown conference delegate (completed)" width="1920"/>
+                <img src="ad84d6a6d141f5a2c5120e486518806b60154a046458db8a2ec98e86bed7ef91.png" title=" And Select Annual turnover of your Company conference delegate" width="1920"/>
+                <img src="ad84d6a6d141f5a2c5120e486518806b60154a046458db8a2ec98e86bed7ef91.png" title=" Select annual turnover of your company conference delegate" width="1920"/>
+                <img src="709288bb18b239da898317fcee2b3c0bb0b16e60f9e7c64ea91b0e1154fcd6c5.png" title=" And Select Annual turnover of your Company conference delegate" width="1920"/>
+                <img src="709288bb18b239da898317fcee2b3c0bb0b16e60f9e7c64ea91b0e1154fcd6c5.png" title=" Select annual turnover of your company conference delegate (completed)" width="1920"/>
+                <img src="709288bb18b239da898317fcee2b3c0bb0b16e60f9e7c64ea91b0e1154fcd6c5.png" title=" And Click Required Business Objectives conference delegate" width="1920"/>
+                <img src="709288bb18b239da898317fcee2b3c0bb0b16e60f9e7c64ea91b0e1154fcd6c5.png" title=" Click required business objectives conference delegate" width="1920"/>
+                <img src="4a6a1a6b60389195c0adfdb6315b045916fdb5e6456031341566ed5d700036da.png" title=" And Click Required Business Objectives conference delegate" width="1920"/>
+                <img src="4a6a1a6b60389195c0adfdb6315b045916fdb5e6456031341566ed5d700036da.png" title=" Click required business objectives conference delegate (completed)" width="1920"/>
+                <img src="4a6a1a6b60389195c0adfdb6315b045916fdb5e6456031341566ed5d700036da.png" title=" And Click next button for conference delegate Three" width="1920"/>
+                <img src="4a6a1a6b60389195c0adfdb6315b045916fdb5e6456031341566ed5d700036da.png" title=" Click next button for conference delegate three" width="1920"/>
+                <img src="18e57610fa30ff55d9ed253921232625b9eef7767c5572bdd8bb3468c388521f.png" title=" Click next button for conference delegate three (completed)" width="1920"/>
+                <img src="18e57610fa30ff55d9ed253921232625b9eef7767c5572bdd8bb3468c388521f.png" title=" And Click next button for conference delegate Three (completed)" width="1920"/>
+                <img src="18e57610fa30ff55d9ed253921232625b9eef7767c5572bdd8bb3468c388521f.png" title=" When Select the Required sessions you'd like to attend conference delegate" width="1920"/>
+                <img src="18e57610fa30ff55d9ed253921232625b9eef7767c5572bdd8bb3468c388521f.png" title=" Select the required sessions you d liketoattendconference delegate" width="1920"/>
+                <img src="4deee5f8d28cd0c840c27606d150fd7b86f83cd039c08e3333aed30e086e75bf.png" title=" When Select the Required sessions you'd like to attend conference delegate" width="1920"/>
+                <img src="4deee5f8d28cd0c840c27606d150fd7b86f83cd039c08e3333aed30e086e75bf.png" title=" Select the required sessions you d liketoattendconference delegate (completed)" width="1920"/>
+                <img src="4deee5f8d28cd0c840c27606d150fd7b86f83cd039c08e3333aed30e086e75bf.png" title=" And Click next button for conference delegate four" width="1920"/>
+                <img src="4deee5f8d28cd0c840c27606d150fd7b86f83cd039c08e3333aed30e086e75bf.png" title=" Click next button for conference delegate four" width="1920"/>
+                <img src="a1cf8d8978251cadac30c91c33f34ea06a1bb513cb6bf9ca071537a91e06beb6.png" title=" Click next button for conference delegate four (completed)" width="1920"/>
+                <img src="a1cf8d8978251cadac30c91c33f34ea06a1bb513cb6bf9ca071537a91e06beb6.png" title=" And Click next button for conference delegate four (completed)" width="1920"/>
+                <img src="a1cf8d8978251cadac30c91c33f34ea06a1bb513cb6bf9ca071537a91e06beb6.png" title=" And Click Submite button conference delegate five" width="1920"/>
+                <img src="a1cf8d8978251cadac30c91c33f34ea06a1bb513cb6bf9ca071537a91e06beb6.png" title=" Click submite button conference delegate five" width="1920"/>
+                <img src="854d78ba5a1a767eb178bf6b6cd1fe6d4379f8d4d1c93038aa657eb7e16b74b9.png" title=" Click submite button conference delegate five (completed)" width="1920"/>
+                <img src="854d78ba5a1a767eb178bf6b6cd1fe6d4379f8d4d1c93038aa657eb7e16b74b9.png" title=" And Click Submite button conference delegate five (completed)" width="1920"/>
+                <img src="854d78ba5a1a767eb178bf6b6cd1fe6d4379f8d4d1c93038aa657eb7e16b74b9.png" title=" Then Validate the Registration successfull conference delegate" width="1920"/>
+                <img src="c4022ba57329a5dfb0a7b5462e40db24c23c0f8879f314277fd70619d18e9597.png" title=" Validate the registration successfull conference delegate" width="1920"/>
+                <img src="1b99a6d5bd5772ca8f1424e8464aa2268b2b824d4248b95a93f14d0e0a0afcc9.png" title=" Then Validate the Registration successfull conference delegate" width="1920"/>
+                <img src="1b99a6d5bd5772ca8f1424e8464aa2268b2b824d4248b95a93f14d0e0a0afcc9.png" title=" Validate the registration successfull conference delegate (completed)" width="1920"/>
+                <img src="1b99a6d5bd5772ca8f1424e8464aa2268b2b824d4248b95a93f14d0e0a0afcc9.png" title=" 1: To validate register as a conference delegate functionality ({Image=C:\image\testimage.png, firstName=Test1, Lastname=Test2, Email=Test97hfhkkdkkjtljihgfefi@gmail.com, PhoneNumber=986543210, PassportNumber=4321649, File=C:\image\testimage.png, ContactName=amazon, ContactNum=98765432156, Relation=Relation, Companyname=sampleCompany, JobTitle=Tester, Line1=Address1, Line2=Address2, City=denmork, CompanyWeb=www.company.com, Telephone=9876543210, AlterEmail=alter123@gmail.com, Altername=AlterName, AlterNumer=987654320}) (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.6.21</span>
+</div>
+</body>
+</html>

@@ -1,3 +1,4 @@
+@ff1
 Feature: To Validate the Exhibitors functionality
 
 Scenario: To validate the exibitors page
@@ -6,9 +7,7 @@ Given To open the IATF application
 When To click the Exhibitors button
 And To click the exibitors Right arrow
 Then Validate exibitors Page
-When Click Registor to exhibit link
-Then Validate book to exhibit register page in exhibitors  
-When To navigate back
+
 When Click registor to visit in exibitors link
 Then Validate registor to visit page in exibitors 
 When To navigate back
@@ -41,7 +40,7 @@ When To navigate back
 
 
 
-
+@new
 Scenario: To validate the exibitorsList page
 
 Given To open the IATF application

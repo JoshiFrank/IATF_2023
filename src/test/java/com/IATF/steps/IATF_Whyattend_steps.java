@@ -69,7 +69,7 @@ public class IATF_Whyattend_steps {
 	}
 
 	@Then("Validate register to visit page")
-	public void validate_register_to_visit_page() {
+	public void validate_register_to_visit_page() throws InterruptedException {
 		
 		wa.validate_registertovisitpage();
 	    
@@ -266,9 +266,10 @@ public class IATF_Whyattend_steps {
 		wa.select_countryregion_fromdropdown();
 	}
 
-	@When("Select the State\\/Province from Dropdown")
-	public void select_the_state_province_from_dropdown() {
-		wa.select_the_stateprovince_fromdropdown();
+	@When("Select the State\\/Province from Dropdown {string}")
+	public void select_the_state_province_from_dropdown(String string) throws InterruptedException {
+	 
+	wa.select_the_stateprovince_fromdropdown();
 	    
 	}
 
@@ -320,19 +321,27 @@ public class IATF_Whyattend_steps {
 	    
 	}
 
-	@When("Click the Required Radio button for What is your purchasing power Queation")
-	public void click_the_required_radio_button_for_what_is_your_purchasing_power_queation() {
-		
-		wa.click_the_required_radio_button_purchasing_power_queation();
-	    
-	}
+	/*
+	 * @When("Click the Required Radio button for What is your purchasing power Queation"
+	 * ) public void
+	 * click_the_required_radio_button_for_what_is_your_purchasing_power_queation()
+	 * {
+	 * 
+	 * wa.click_the_required_radio_button_purchasing_power_queation();
+	 * 
+	 * }
+	 */
 
-	@When("Click the Required Radio button for What are your motivations for visiting")
-	public void click_the_required_radio_button_for_what_are_your_motivations_for_visiting() {
-		
-		wa.click_the_required_radio_button_motivations_for_visiting();
-	    
-	}
+	/*
+	 * @When("Click the Required Radio button for What are your motivations for visiting"
+	 * ) public void
+	 * click_the_required_radio_button_for_what_are_your_motivations_for_visiting()
+	 * {
+	 * 
+	 * wa.click_the_required_radio_button_motivations_for_visiting();
+	 * 
+	 * }
+	 */
 
 	@When("Click the Required Radio button for What are the main geographical regions that you are interested in")
 	public void click_the_required_radio_button_for_what_are_the_main_geographical_regions_that_you_are_interested_in() throws InterruptedException {

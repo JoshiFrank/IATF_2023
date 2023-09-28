@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="To test IATF application" skipped="0" tests="1" time="39.99" timestamp="2023-09-27 06:22:35"><testcase name="To test the Register the exhibit option"><failure message="Expected enabled element was not enabled&#10;Build info: version: '4.11.0', revision: '040bc5406b'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: unknown</failure><system-err>Expected enabled element was not enabled
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: unknown&#13;
+com.IATF.pages.IATF_Registertoexhibit_Pages.Click_Submit(IATF_Registertoexhibit_Pages.java:158)&#13;
+com.IATF.steps.IATF_Registertoexhibit_Steps.to_click_submit_button(IATF_Registertoexhibit_Steps.java:125)&#13;
+✽.To click SubmitButton(file:///C:/Users/hp/eclipse-workspace/IATF_SerenityBDD_Framework/src/test/resources/IATF_features/IATF_Registertoexhibit.feature:20)&#13;
+</system-err></testcase></testsuite>

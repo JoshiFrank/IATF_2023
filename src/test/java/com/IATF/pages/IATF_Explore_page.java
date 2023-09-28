@@ -52,7 +52,7 @@ public class IATF_Explore_page extends PageObject {
 	@Step
 	public void to_validate_the_navigate_to_registor_to_visit_page_from_explore_page() {
 		
-		boolean displayed = $(By.xpath("//p[contains(text(),'registration for iatf 2023')]")).isDisplayed();
+		boolean displayed = $(By.xpath("(//p[contains(text(),'registration')])[1]")).isDisplayed();
 		Assert.assertTrue(displayed);
 		
 	}

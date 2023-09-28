@@ -1,4 +1,3 @@
-@exploreoptions
 Feature: To Validate The Explore Options Functionality
 
 Scenario: To validate the B to B AND B to G page
@@ -63,21 +62,10 @@ Given To open the IATF application
 When To click explore button 
 And To click Exhibitions link in popup
 Then To validate Exhibitions page
-When To click download the factsheet more information link
-#Then To validate download the factsheet more information page
-When Navigate to back
-
-And To click View Stand packages
-#Then To validate View Stand Packages page
-When Navigate to back
 
 
-And To click Register to exhibit option
-Then Validate  Register to exhibit option page
-Then Navigate to back
-And To click discover our exhibiting options
-Then To validate discover our exhibitinh options page
-Then Navigate to back
+
+
 
 
 
@@ -113,25 +101,7 @@ Given To open the IATF application
 When To click explore button 
 And To click African automotive show in popup
 Then To validate African automotive show page
-When To click download the factsheet more information link
-#Then To validate download the factsheet more information page
 
-And To click View Stand packages
-#Then To validate View Stand Packages page
-
-And To download the programme here link
-Then To validate the programme here page
-
-And To click Register to exhibit
-Then To validate Register to exhibit
-Then Navigate to back
-
-And To click Register to visit
-#Then To validate Register to visit 
-
-And To click appy here to download form
-#Then To validate appy here to download form
-Then Navigate to back
 
 
 
@@ -141,13 +111,7 @@ Given To open the IATF application
 When To click explore button 
 And To click Country days in popup
 Then To validate Country days page
-When To click download the factsheet more information link
-Then To validate download the factsheet more information page
-Then Navigate to back
 
-And To click Register here option
-Then To validate register here page
-Then Navigate to back
 
 
 

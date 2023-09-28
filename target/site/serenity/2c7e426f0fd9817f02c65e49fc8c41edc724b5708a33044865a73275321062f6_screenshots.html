@@ -149,7 +149,7 @@
             <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 20-09-2023 17:03</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 27-09-2023 18:20</span>
     <br style="clear:left"/>
 </div>
 
@@ -190,12 +190,6 @@
                             </p>
                             <p class="tag">
                                 <span class="badge tag-badge" style="background:default;"
-                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="608dda024f35fc6bef5cfe476463ae254a48075b3d2735c7a4f696f00181e9fd.html">Exploreoptions
-                                </a>
-                                </span>
-                            </p>
-                            <p class="tag">
-                                <span class="badge tag-badge" style="background:default;"
                                     <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="59736924e81ea98f655ac8eba7cd96079d8d80131e0c4360daf32a724d0b38a0.html">Chrome, Windows
                                 </a>
                                 </span>
@@ -208,9 +202,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
-                                <span class="failing-color">To validate the Exhibitions page
+                                <span class="success-color">To validate the Exhibitions page
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -227,66 +221,20 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
-            <div class="screenshotFailure panel panel-danger">
-    <div style="display:block">
-        <div class="table">
-            <div class="row">
-                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
-                </div>
-                <div class="col-sm-2">
-                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
-                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
-                </div>
-             </div>
-        </div>
-    <div>
-
-    <!-- Details Section -->
-    <div class="row stacktrace-details">
-      <div class="col">
-        <div class="collapse multi-collapse" id="stacktraceModal-overall">
-            <div class="card">
-                <div class="card-header">
-                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <pre>com.IATF.pages.IATF_Exploreoptions_Pages.to_click_view_stand_packages(IATF_Exploreoptions_Pages.java:220)<br />com.IATF.steps.IATF_Exploreoptions_Steps.to_click_view_stand_packages(IATF_Exploreoptions_Steps.java:171)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:56)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:330)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:51)<br />org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)<br /></pre>
-                    </div>
-
-                    <h4>
-                        Caused by: org.openqa.selenium.TimeoutException
-                    </h4>
-                    <div>
-                            <pre>Expected condition failed: waiting for By.xpath: //span[text()='VIEW STAND PACKAGES'] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
-                        <pre>com.IATF.pages.IATF_Exploreoptions_Pages.to_click_view_stand_packages(IATF_Exploreoptions_Pages.java :220)<br />com.IATF.steps.IATF_Exploreoptions_Steps.to_click_view_stand_packages(IATF_Exploreoptions_Steps.java :171)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java :66)<br />io.cucumber.java.Invoker.invoke(Invoker.java :24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java :47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java :29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java :66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java :84)<br />io.cucumber.core.runner.TestStep.run(TestStep.java :56)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java :51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java :84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java :75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java :130)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java :23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java :130)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java :137)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java :330)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java :51)<br />org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java :98)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java :40)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :529)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :756)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java :452)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java :210)<br /></pre>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="183d2c95ba52541f5970a9b2eabb854dcb17cae22451b06009c67af266c73d7a.png" title=" Given To open the IATF application" width="1920"/>
-                <img src="96711872a363ee5785219958a3a23e3f935df67d8ac64ae9d744e13d6bfb8648.png" title=" When To click explore button" width="1920"/>
-                <img src="96711872a363ee5785219958a3a23e3f935df67d8ac64ae9d744e13d6bfb8648.png" title=" To click explore button" width="1920"/>
-                <img src="96711872a363ee5785219958a3a23e3f935df67d8ac64ae9d744e13d6bfb8648.png" title=" When To click explore button (completed)" width="1920"/>
-                <img src="cfb878e00c0a3f72b65de1b58b0b36cbf547eaf7d3c315c10920073ab0e3fd6f.png" title=" And To click Exhibitions link in popup" width="1920"/>
-                <img src="cfb878e00c0a3f72b65de1b58b0b36cbf547eaf7d3c315c10920073ab0e3fd6f.png" title=" To click exhibitions link in popup" width="1920"/>
-                <img src="9f514e405c0c7b1e3e8b550b2749804bb29618e77f5862e6907ec0ff25ad4fd1.png" title=" To click exhibitions link in popup (completed)" width="1920"/>
-                <img src="9f514e405c0c7b1e3e8b550b2749804bb29618e77f5862e6907ec0ff25ad4fd1.png" title=" And To click Exhibitions link in popup (completed)" width="1920"/>
-                <img src="51fad6b6d88a77f8bce9ed4331d87e6a25d13c9e710d519abc5f2cb98880fd51.png" title=" Then To validate Exhibitions page" width="1920"/>
-                <img src="51fad6b6d88a77f8bce9ed4331d87e6a25d13c9e710d519abc5f2cb98880fd51.png" title=" To validate exhibitions page" width="1920"/>
-                <img src="43acc73c7381c7d4c5929e166d302bf2e6ac71e27716c81bacc4857e038ba84c.png" title=" To validate exhibitions page (completed)" width="0"/>
-                <img src="43acc73c7381c7d4c5929e166d302bf2e6ac71e27716c81bacc4857e038ba84c.png" title=" Then To validate Exhibitions page (completed)" width="0"/>
-                <img src="e73346a6ae8f5d7604f47360d1770f3b75be2638c0b93cd1e7e1e9812e873dfd.png" title=" When To click download the factsheet more information link" width="1920"/>
-                <img src="e73346a6ae8f5d7604f47360d1770f3b75be2638c0b93cd1e7e1e9812e873dfd.png" title=" To click download the factsheet more information link" width="1920"/>
-                <img src="508810571fac42c8d88c887538f6163b8bbb7896d96f5cfb9cbcaa3f8077bbaf.png" title=" When To click download the factsheet more information link" width="0"/>
-                <img src="508810571fac42c8d88c887538f6163b8bbb7896d96f5cfb9cbcaa3f8077bbaf.png" title=" To click download the factsheet more information link (completed)" width="0"/>
-                <img src="508810571fac42c8d88c887538f6163b8bbb7896d96f5cfb9cbcaa3f8077bbaf.png" title=" And To click View Stand packages" width="0"/>
-                <img src="508810571fac42c8d88c887538f6163b8bbb7896d96f5cfb9cbcaa3f8077bbaf.png" title=" To click view stand packages: <span class='failing-color'>FAILURE</span>" width="0"/>
+                <img src="76d979999a007be40f25bf1be23936878a8b906d4b8dcfb142210c0feefab61c.png" title=" Given To open the IATF application" width="1920"/>
+                <img src="1826ce0f8e4ebd9d8611339f25ebcd7fa5a8051507b39411e6655613b5e4f740.png" title=" When To click explore button" width="1920"/>
+                <img src="1826ce0f8e4ebd9d8611339f25ebcd7fa5a8051507b39411e6655613b5e4f740.png" title=" To click explore button" width="1920"/>
+                <img src="1826ce0f8e4ebd9d8611339f25ebcd7fa5a8051507b39411e6655613b5e4f740.png" title=" When To click explore button (completed)" width="1920"/>
+                <img src="2d14741f71a37c75a0a3fa63d55a97eb99913ec21b88a297fb81cefc80c8f469.png" title=" And To click Exhibitions link in popup" width="1920"/>
+                <img src="2d14741f71a37c75a0a3fa63d55a97eb99913ec21b88a297fb81cefc80c8f469.png" title=" To click exhibitions link in popup" width="1920"/>
+                <img src="08be6ecdfab60902ed4ce32b300ea48d4d6552e17b7d1bd8c6e5ccaf61c57a14.png" title=" To click exhibitions link in popup (completed)" width="1920"/>
+                <img src="08be6ecdfab60902ed4ce32b300ea48d4d6552e17b7d1bd8c6e5ccaf61c57a14.png" title=" And To click Exhibitions link in popup (completed)" width="1920"/>
+                <img src="c911dc0e9d6e9eb21e473df1754212e42d2ac397aaa6cc2f8b312b3378fedb8b.png" title=" Then To validate Exhibitions page" width="1920"/>
+                <img src="c911dc0e9d6e9eb21e473df1754212e42d2ac397aaa6cc2f8b312b3378fedb8b.png" title=" To validate exhibitions page" width="1920"/>
+                <img src="e3df6aca24e5177f6bff76d9435bd9ebca01832a06a4c8fd6d089d85e2e14d1c.png" title=" To validate exhibitions page (completed)" width="1920"/>
+                <img src="e3df6aca24e5177f6bff76d9435bd9ebca01832a06a4c8fd6d089d85e2e14d1c.png" title=" Then To validate Exhibitions page (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
             </div>
         </div>
 
